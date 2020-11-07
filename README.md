@@ -2,8 +2,8 @@
 
 ## :book: Layout
 
-* [DOCTYPE](https://github.com/yonghap/FrontEnd-Study/blob/main/posts/js/02.function.md)
-* [Theme](https://github.com/yonghap/FrontEnd-Study/blob/main/posts/js/02.function.md)
+* [DOCTYPE](https://github.com/yonghap/Web-Component/blob/main/layout/doctype.md)
+* [Theme](https://github.com/yonghap/Web-Component/blob/main/layout/theme.md)
 
 
 ## :page_facing_up: HTML

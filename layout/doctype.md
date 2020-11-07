@@ -16,7 +16,7 @@ SEO와 Viewport를 위한 소스도 추가할 수 있다.
 ```html
 <head>
     <meta charset="UTF-8">
-    <title>Webwiki Coding Guide</title>
+    <title>Document Title</title>
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="apple-mobile-web-app-title" content="">
     <meta name="keywords" content="키워드">
