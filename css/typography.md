@@ -23,7 +23,13 @@ px, rem, em 단위는 임의로 정합니다.
 ```
 
 ```css
-.h1 {font-size:32px;line-height:1.6}
-.h2 {font-size:28px;line-height:1.5}
-.h3 {font-size:24px}
+.h1 {
+    font-size:32px;line-height:1.6
+}
+.h2 {
+    font-size:28px;line-height:1.5
+}
+.h3 {
+    font-size:24px
+}
 ```

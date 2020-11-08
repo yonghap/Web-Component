@@ -16,7 +16,13 @@
 ```
 
 ```css
-.description {color:#333}
-.description--notice {color:#DE3535}
-.color--notice {color:#DE3535}
+.description {
+    color:#333
+}
+.description--notice {
+    color:#DE3535
+}
+.color--notice {
+    color:#DE3535
+}
 ```
