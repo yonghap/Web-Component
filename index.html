@@ -1,0 +1,169 @@
+<!doctype html>
+<html lang="ko">
+<head>
+	<meta charset="UTF-8">
+	<meta name="viewport"
+	      content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0">
+	<meta http-equiv="X-UA-Compatible" content="ie=edge">
+	<title>CommoN</title>
+	<script src="js/jquery-latest.min.js"></script>
+	<link rel="stylesheet"
+	      href="http://cdn.jsdelivr.net/gh/highlightjs/cdn-release@10.3.2/build/styles/default.min.css">
+	<script src="http://cdn.jsdelivr.net/gh/highlightjs/cdn-release@10.3.2/build/highlight.min.js"></script>
+	<link rel="stylesheet" href="css/monokai.css">
+	<link rel="stylesheet" href="css/common.css">
+</head>
+<body class="theme">
+	<div id="wrap" class="wrap">
+		<header id="header" class="header">
+			<h1 class="h1">Web Component</h1>
+			<p class="description">
+				개인용 Web Component 입니다.<br>
+				BEM CSS 방법론을 사용합니다.
+			</p>
+		</header>
+		<!-- doctype -->
+		<section class="section">
+			<h2 class="h2"><a href="#"># DOCTYPE</a></h2>
+			<article class="article">
+				<p class="description">
+					HTML5 DOCTYPE을 사용합니다.
+				</p>
+<!--code-->
+<pre><code class="language-html">&lt;!DOCTYPE html&gt;
+&lt;html lang="ko"&gt;
+	&lt;head&gt;
+        <meta charset="UTF-8">
+        <title>Document Title</title>
+	&lt;/head&gt;
+&lt;/html&gt;
+</code></pre>
+<!--//code-->
+			</article>
+		</section>
+		<!-- theme -->
+		<section class="section">
+			<h2 class="h2"><a href="#"># Theme</a></h2>
+			<article class="article">
+				<p class="description">
+					테마 사용시 body나 wrap에 theme 클래스를 추가합니다.<br>
+					기본 글자 모양을 정의합니다.
+				</p>
+<!--code-->
+<pre><code class="language-html">&lt;body class="theme"&gt;&lt;/body&gt;
+&lt;body class="theme theme--dark"&gt;&lt;/body&gt;
+<div id="wrap" class="wrap theme"></div>
+<div id="wrap" class="wrap theme--dark"></div>
+</code></pre>
+<!--//code-->
+<!--code-->
+<pre><code class="language-css">.wrap {
+	font-family:'Noto Sans KR','Roboto','serif';
+	font-size:16px;
+	line-height:1.6;
+	color:#111;
+}
+</code></pre>
+				<!--//code-->
+			</article>
+		</section>
+		<!--reset-->
+		<section class="section">
+			<h2 class="h2"><a href="#"># Reset</a></h2>
+			<article class="article">
+				<p class="description">
+					Reset Css 입니다.<br>
+					필요한 부분은 추가하여 사용합니다.<br>
+					Nomalize를 사용해도 됩니다.
+				</p>
+<!--code-->
+<pre><code class="language-css">@charset "UTF-8";
+html,body,div,dl,dt,dd,ul,ol,li,h1,h2,h3,h4,h5,h6,form,fieldset,p,input,textarea,select,button,th,td,blockquote {margin:0;padding:0}
+body {-webkit-text-size-adjust:none}
+ul,ol,li {list-style:none}
+a {text-decoration:none}
+img {max-width:100%;border:none;vertical-align:top}
+button, input[type=button], input[type=submit] {-webkit-appearance:none;-webkit-border-radius:none}
+
+.blind {visibility:hidden; overflow:hidden; position:absolute; top:0; left:0; width:1px; height:1px; font-size:0; line-height:0}
+</code></pre>
+				<!--//code-->
+			</article>
+		</section>
+		<!--typography-->
+		<section class="section">
+			<h2 class="h2"><a href="#"># Typography</a></h2>
+			<article class="article">
+				<p class="description">
+					타이포 크기의 정의는 프로젝트에 따라 다르게 정의합니다..<br>
+					기본 타이틀과 서브 타이틀로 나누고 기타 타이틀은 임의로 정의합니다. <br>
+					px, rem, em 단위는 사용은 임의로 합니다.
+				</p>
+<!--code-->
+<pre><code class="language-html"><header>
+    <h1 class="h1">Title</h1>
+</header>
+<section class="section">
+    <h2 class="h2">Sub Title</h2>
+
+	<!-- Article -->
+    <article class="article">
+        <h3 class="h3">Article Title</h3>
+    </article>
+
+	<!-- Article -->
+    <article class="article">
+        <h3 class="h3">Article Title</h3>
+    </article>
+
+	<!-- Article -->
+    <article class="article">
+        <h3 class="h3">Article Title</h3>
+    </article>
+</section>
+</code></pre>
+<!--//code-->
+
+<!--code-->
+<pre><code class="language-css">.h1 {
+    font-size:40px;
+}
+.h2 {
+    font-size:28px;
+}
+.h3 {
+    font-size:24px
+}
+</code></pre>
+				<!--//code-->
+			</article>
+		</section>
+
+
+
+
+		<!--default-->
+		<section class="section">
+			<h2 class="h2"><a href="#"># Typography</a></h2>
+			<article class="article">
+				<p class="description">
+
+				</p>
+<!--code-->
+<pre><code class="language-html">
+</code></pre>
+				<!--//code-->
+			</article>
+		</section>
+	</div>
+<script>
+	document.querySelectorAll("code").forEach(function (element) {
+		element.innerHTML = element.innerHTML.replace(/</g, "&lt;").replace(/>/g, "&gt;").replace(/"/g, "&quot;").replace(/'/g, "&#039;");
+	});
+	$(document).ready(function () {
+		hljs.configure({tabReplace: '    '});
+		hljs.initHighlighting();
+	});
+</script>
+</body>
+</html>
