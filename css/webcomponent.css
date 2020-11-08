@@ -1,0 +1,31 @@
+@charset "UTF-8";
+html,body,div,dl,dt,dd,ul,ol,li,h1,h2,h3,h4,h5,h6,form,fieldset,p,input,textarea,select,button,th,td,blockquote {margin:0;padding:0}
+body {-webkit-text-size-adjust:none}
+ul,ol,li {list-style:none}
+a {color:#0080cc;text-decoration:none}
+img {max-width:100%;border:none;vertical-align:top}
+button, input[type=button], input[type=submit] {-webkit-appearance:none;-webkit-border-radius:none}
+.blind {visibility:hidden; overflow:hidden; position:absolute; top:0; left:0; width:1px; height:1px; font-size:0; line-height:0}
+
+/*** WEB-COMPONENT ***/
+
+/* theme */
+.wrap {font-family:'Noto Sans KR','Roboto','serif';font-size:16px;line-height:1.6;color:#333}
+
+/* typography */
+.h1 {font-size:40px}
+.h2 {font-size:32px}
+.h3 {margin-top:20px;font-size:24px}
+
+/*table*/
+.table {
+	table-layout:fixed;
+	width:100%;
+	border-spacing:0
+}
+.table th, .table td {
+	padding:5px 10px
+}
+.table th {
+	background:#eee;
+}
