@@ -1,8 +1,8 @@
 # # Typorgraphy
 
-타이포 크기의 정의는 프로젝트에 따라 다르게 정합니다.<br>
-기본 대타이틀과 소타이틀로 나누고 기타 타이틀은 임의로 정의합니다. <br>
-px, rem, em 단위는 임의로 정합니다.
+타이포 크기의 정의는 프로젝트에 따라 다르게 정의한다.<br>
+기본 대타이틀과 소타이틀로 나누고 기타 타이틀은 임의로 정의한다. <br>
+px, rem, em 단위는 임의로 정한다.
 
 ```html
 <header>
@@ -10,12 +10,18 @@ px, rem, em 단위는 임의로 정합니다.
 </header>
 <section class="section">
     <h2 class="h2">Sub TItle</h2>
+
+    <!-- Article -->
     <article class="article">
         <h3 class="h3">Article Title</h3>
     </article>
+
+    <!-- Article -->
     <article class="article">
         <h3 class="h3">Article Title</h3>
     </article>
+
+    <!-- Article -->
     <article class="article">
         <h3 class="h3">Article Title</h3>
     </article>

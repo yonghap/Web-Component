@@ -7,6 +7,7 @@
 
 ## :art: CSS
 
+* [Reset](https://github.com/yonghap/Web-Component/blob/main/css/reset.md)
 * [Typography](https://github.com/yonghap/Web-Component/blob/main/css/typography.md)
 * [Color](https://github.com/yonghap/Web-Component/blob/main/css/color.md)
 
