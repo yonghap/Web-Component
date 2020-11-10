@@ -70,7 +70,7 @@
 				<!--//code-->
 			</article>
 		</section>
-		<hr>
+		<div class="line"></div>
 		<!--reset-->
 		<section class="section">
 			<h2 class="h2"><a href="#"># Reset</a></h2>
@@ -99,7 +99,7 @@ button, input[type=button], input[type=submit] {-webkit-appearance:none;-webkit-
 			<h2 class="h2"><a href="#"># Typography</a></h2>
 			<article class="article">
 				<p class="description">
-					타이포 크기의 정의는 프로젝트에 따라 다르게 정의합니다..<br>
+					타이포 크기는 프로젝트에 따라 다르게 정의합니다.<br>
 					기본 타이틀과 서브 타이틀로 나누고 기타 타이틀은 임의로 정의합니다. <br>
 					px, rem, em 단위는 사용은 임의로 합니다.
 				</p>
@@ -140,7 +140,7 @@ button, input[type=button], input[type=submit] {-webkit-appearance:none;-webkit-
 }
 </code></pre>
 <!--//code-->
-				<h3 class="h3">Result</h3>
+				<h4 class="h4">Result</h4>
 				<div class="result">
 					<h1 class="h1">Title</h1>
 					<h2 class="h2">Sub Title</h2>
@@ -154,70 +154,91 @@ button, input[type=button], input[type=submit] {-webkit-appearance:none;-webkit-
 		<section class="section">
 			<h2 class="h2"><a href="#"># Table</a></h2>
 			<article class="article">
+				<h3 class="h3"># 데이터 테이블</h3>
 				<p class="description">
-					기본 데이터 테이블입니다.
+					기본 데이터 테이블입니다.<br>
+					패딩이나 여백, 배경색상, 폰트 등은 디자인에 맞게 정의합니다.<br><br>
+					데이터의 정렬은 .center나 .left, .right 같은 정렬 클래스를 정의할 수도 있고,<br>
+					nth-child나 first-child 같은 가상 선택자를 사용해도 됩니다.
 				</p>
 				<!--code-->
 <pre><code class="language-html"><div class="table-wrap">
 	<table class="table">
 		<caption class="blind">데이터 테이블입니다.</caption>
 		<colgroup>
-			<col style="width:20%">
-			<col style="width:10%" span="2">
-			<col style="width:30%" span="2">
+			<col style="width:10%">
+			<col style="width:20%" span="2">
+			<col style="width:25%" span="2">
 		</colgroup>
 		<thead>
-			<tr>
-				<th scope="col">No</th>
-				<th scope="col">Name</th>
-				<th scope="col">Age</th>
-				<th scope="col">Job</th>
-				<th scope="col">Location</th>
-			</tr>
+		<tr>
+			<th scope="col">No</th>
+			<th scope="col">Name</th>
+			<th scope="col">Age</th>
+			<th scope="col">Job</th>
+			<th scope="col">Location</th>
+		</tr>
 		</thead>
 		<tbody>
-			<tr>
-				<td>4</td>
-				<td>David</td>
-				<td>23</td>
-				<td>Designer</td>
-				<td>Seoul</td>
-			</tr>
-			<tr>
-				<td>3</td>
-				<td>Julia</td>
-				<td>25</td>
-				<td>Marketer</td>
-				<td>Tokyo</td>
-			</tr>
-			<tr>
-				<td>2</td>
-				<td>Robin</td>
-				<td>21</td>
-				<td>Singer</td>
-				<td>New York</td>
-			</tr>
-			<tr>
-				<td>1</td>
-				<td>Bobby</td>
-				<td>24</td>
-				<td>Musician</td>
-				<td>Paris</td>
-			</tr>
+		<tr>
+			<td>4</td>
+			<td>David</td>
+			<td>23</td>
+			<td>Designer</td>
+			<td>Seoul</td>
+		</tr>
+		<tr>
+			<td>3</td>
+			<td>Julia</td>
+			<td>25</td>
+			<td>Marketer</td>
+			<td>Tokyo</td>
+		</tr>
+		<tr>
+			<td>2</td>
+			<td>Robin</td>
+			<td>21</td>
+			<td>Singer</td>
+			<td>New York</td>
+		</tr>
+		<tr>
+			<td>1</td>
+			<td>Bobby</td>
+			<td>24</td>
+			<td>Musician</td>
+			<td>Paris</td>
+		</tr>
 		</tbody>
 	</table>
 </div>
 </code></pre>
 <!--//code-->
-				<h3 class="h3">Result</h3>
+<!--code-->
+<pre><code class="language-css">.table {
+	table-layout:fixed;
+	width:100%;
+	border-spacing:0
+}
+.table th, .table td {
+	padding:5px 10px
+}
+.table th {
+	background:#eee;
+}
+.table td {
+	border-bottom:1px solid #ccc;
+}
+</code></pre>
+				<!--//code-->
+				<h4 class="h4">Result</h4>
 				<div class="result">
 					<div class="table-wrap">
 						<table class="table">
 							<caption class="blind">데이터 테이블입니다.</caption>
 							<colgroup>
-								<col style="width:20%">
-								<col style="width:10%" span="2">
-								<col style="width:30%" span="2">
+								<col style="width:10%">
+								<col style="width:20%" span="2">
+								<col style="width:25%" span="2">
 							</colgroup>
 							<thead>
 							<tr>
@@ -262,6 +283,92 @@ button, input[type=button], input[type=submit] {-webkit-appearance:none;-webkit-
 					</div>
 				</div>
 			</article>
+			<article class="article">
+				<h3 class="h3"># 항목 테이블</h3>
+				<p class="description">
+					항목 테이블입니다.
+				</p>
+				<!--code-->
+				<pre><code class="language-html"><div class="table-wrap">
+	<table class="table table--label">
+		<caption class="blind">데이터 테이블입니다.</caption>
+		<colgroup>
+			<col style="width:25%">
+			<col>
+		</colgroup>
+		<tbody>
+			<tr>
+				<th scope="row">No</th>
+				<td>1</td>
+			</tr>
+			<tr>
+				<th scope="row">Name</th>
+				<td>Julia</td>
+			</tr>
+			<tr>
+				<th scope="row">Job</th>
+				<td>Designer</td>
+			</tr>
+			<tr>
+				<th scope="row">Location</th>
+				<td>Seoul</td>
+			</tr>
+		</tbody>
+	</table>
+</div>
+</code></pre>
+<!--//code-->
+<!--code-->
+<pre><code class="language-css">.table {
+	table-layout:fixed;
+	width:100%;
+	border-spacing:0
+}
+.table th, .table td {
+	padding:5px 10px
+}
+.table th {
+	background:#eee;
+}
+.table td {
+	border-bottom:1px solid #ccc;
+}
+.table--label tr:first-child td {
+	border-top:1px solid #eee;
+}
+</code></pre>
+<!--code-->
+				<h4 class="h4">Result</h4>
+				<div class="result">
+					<div class="table-wrap">
+						<table class="table table--label">
+							<caption class="blind">데이터 테이블입니다.</caption>
+							<colgroup>
+								<col style="width:25%">
+								<col>
+							</colgroup>
+							<tbody>
+							<tr>
+								<th scope="row">No</th>
+								<td>1</td>
+							</tr>
+							<tr>
+								<th scope="row">Name</th>
+								<td>Julia</td>
+							</tr>
+							<tr>
+								<th scope="row">Job</th>
+								<td>Designer</td>
+							</tr>
+							<tr>
+								<th scope="row">Location</th>
+								<td>Seoul</td>
+							</tr>
+							</tbody>
+						</table>
+					</div>
+				</div>
+			</article>
 		</section>
 
 
@@ -279,7 +386,7 @@ button, input[type=button], input[type=submit] {-webkit-appearance:none;-webkit-
 <pre><code class="language-html">
 </code></pre>
 <!--//code-->
-				<h3 class="h3">Result</h3>
+				<h4 class="h4">Result</h4>
 				<div class="result">
 				</div>
 			</article>

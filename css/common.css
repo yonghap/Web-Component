@@ -16,7 +16,7 @@ code {font-family:'Source Code Pro';padding:15px !important;font-size:13px}
 .wrap {max-width:1120px;margin:0 auto;padding:40px;font-family:'Noto Sans KR','Roboto','serif';font-size:16px;color:#111;line-height:1.6}
 .header {margin-bottom:40px}
 .header .description {margin-top:10px}
-.section {margin:26px 0}
-.article {padding:15px 30px}
+.section {margin-bottom:50px}
+.article {padding:0 30px}
 .result {margin:10px 0;padding:15px 20px;border:1px solid #eee}
-hr {border-color#ddd}
+.line {height:1px;margin-top:50px;margin-bottom:30px;background:#ddd}
