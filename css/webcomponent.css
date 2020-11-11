@@ -18,6 +18,7 @@ button, input[type=button], input[type=submit] {-webkit-appearance:none;-webkit-
 .h2 {margin-bottom:10px;font-size:34px}
 .h3 {margin-top:20px;margin-bottom:10px;font-size:26px;color:#444}
 .h4 {margin-top:15px;margin-bottom:10px;font-size:20px;color:#666}
+.h6 {margin-bottom:15px;font-size:14px;color:#888;}
 
 /*table*/
 .table {
@@ -37,4 +38,48 @@ button, input[type=button], input[type=submit] {-webkit-appearance:none;-webkit-
 }
 .table--label tr:first-child td {
 	border-top:1px solid #eee;
+}
+
+/*button*/
+.btn {
+	display:inline-block;
+	padding:6px 12px;
+	border:1px solid transparent;
+	border-radius:4px;
+	background:none;
+	font-family:inherit;
+	font-size:14px;
+	color:#333;
+	line-height:1.43;
+	text-align:center;
+	vertical-align:top;
+	user-select:none;
+	cursor:pointer;
+	outline:none;
+}
+.btn-large {
+	padding:12px 18px;
+	font-size:16px;
+}
+.btn-small {
+	padding:4px 8px;
+	font-size:12px;
+}
+.btn-default {
+	border-color:#ccc;
+}
+.btn-success {
+	background:#0080cc;
+	color:#fff;
+}
+.btn-alert {
+	background:#cc1f00;
+	color:#fff;
+}
+.btn-info {
+	background:#00cc3a;
+	color:#fff;
+}
+.btn-link {
+	color:#0080cc;
 }
