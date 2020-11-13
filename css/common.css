@@ -13,19 +13,20 @@ pre {margin:10px 0}
 code {font-family:'Source Code Pro';padding:15px !important;font-size:13px}
 .hljs-attribute, .hljs-doctag, .hljs-keyword, .hljs-meta-keyword, .hljs-name, .hljs-selector-tag {font-weight:normal}
 /* content */
-.wrap {max-width:1120px;margin:0 auto;padding:40px;font-family:'Noto Sans KR','Roboto','serif';font-size:16px;color:#111;line-height:1.6}
+.wrap {max-width:1120px;margin:0 auto;padding:40px;font-family:'Noto Sans KR','Roboto','serif';font-size:16px;color:#111;line-height:1.68}
 .header {margin-bottom:40px}
 .header .description {margin-top:10px}
 .section {margin-bottom:50px}
 .article {padding:0 30px}
 .result {margin:10px 0;padding:15px 20px;border:1px solid #eee}
 .line {height:1px;margin-top:50px;margin-bottom:30px;background:#ddd}
-figure {margin:12px 0}
+figure {margin:15px 0}
 figcaption {margin-top:5px;font-size:14px;color:#aaa}
 .row [class^=col-] {
 	min-height:5px;
-	border:1px solid #ccc;
-	background:#ffd3d3;
+	padding:10px 5px;
+	border:1px solid #aaa;
+	background:#eee;
 	font-size:12px;
 	color:#666;
 	box-sizing:border-box;

@@ -104,7 +104,8 @@ button, input[type=button], input[type=submit] {-webkit-appearance:none;-webkit-
 					12 그리드 시스템을 사용합니다.<br>
 					프로젝트에 따라서 그리드 시스템을 사용하지 않을 수 있습니다.<br>
 					부트스트랩의 그리드 시스템을 참고합니다.<br>
-					.col-s-, .col-t, .col-d 접두사를 사용하며, < 768, < 1024, > 1024 입니다.
+					.col-s-, .col-t, .col-d 접두사를 사용하며, < 768, < 1024, > 1024 입니다.<br>
+					* 부트스트랩 : <a href="http://bootstrapk.com/css/#grid" target="_blank">http://bootstrapk.com/css/#grid</a>
 				</p>
 				<figure>
 					<img src="imgs/grid.gif" alt="Grid System">
@@ -115,8 +116,73 @@ button, input[type=button], input[type=submit] {-webkit-appearance:none;-webkit-
 						</a>
 					</figcaption>
 				</figure>
-				<!--code-->
-				<pre><code class="language-html">
+<!--code-->
+<pre><code class="language-html"><div class="row">
+	<div class="col-d-1">.col-d-1</div>
+	<div class="col-d-1">.col-d-1</div>
+	<div class="col-d-1">.col-d-1</div>
+	<div class="col-d-1">.col-d-1</div>
+	<div class="col-d-1">.col-d-1</div>
+	<div class="col-d-1">.col-d-1</div>
+	<div class="col-d-1">.col-d-1</div>
+	<div class="col-d-1">.col-d-1</div>
+	<div class="col-d-1">.col-d-1</div>
+	<div class="col-d-1">.col-d-1</div>
+	<div class="col-d-1">.col-d-1</div>
+	<div class="col-d-1">.col-d-1</div>
+</div>
+<div class="row">
+	<div class="col-t-6 col-d-8">.col-t-6 .col-d-8</div>
+	<div class="col-t-6 col-d-4">.col-t-6 .col-d-4</div>
+</div>
+<div class="row">
+	<div class="col-d-4">.col-d-4</div>
+	<div class="col-d-4">.col-d-4</div>
+	<div class="col-d-4">.col-d-4</div>
+</div>
+<div class="row">
+	<div class="col-t-6 col-d-3">.col-t-6 .col-d-3</div>
+	<div class="col-t-6 col-d-3">.col-t-6 .col-d-3</div>
+	<div class="col-t-6 col-d-3">.col-t-6 .col-d-3</div>
+	<div class="col-t-6 col-d-3">.col-t-6 .col-d-3</div>
+</div>
+<div class="row">
+	<div class="col-d-6">.col-d-6</div>
+	<div class="col-d-6">.col-d-6</div>
+</div>
+<div class="row">
+	<div class="col-s-6 col-t-6 col-d-12">.col-s-6 .col-d-12</div>
+</div>
+</code></pre>
+<!--//code-->
+<!--code-->
+<pre><code class="language-css">@media (max-width: 768px) {
+	.col-s-1, .col-s-2, .col-s-3, .col-s-4, .col-s-6, .col-s-8, .col-s-12 {float:left}
+	.col-s-1 {width:8.33333333%}
+	.col-s-3 {width:25%}
+	.col-s-4 {width:33.33333333%}
+	.col-s-6 {width:50%}
+	.col-s-8 {width:66.66666666%}
+	.col-s-12 {width:100%}
+}
+@media (min-width:769px) and (max-width:1024px) {
+	.col-t-1, .col-t-2, .col-t-3, .col-t-4, .col-t-6, .col-t-8, .col-t-12 {float:left}
+	.col-t-1 {width:8.33333333%}
+	.col-t-3 {width:25%}
+	.col-t-4 {width:33.33333333%}
+	.col-t-6 {width:50%}
+	.col-t-8 {width:66.66666666%}
+	.col-t-12 {width:100%}
+}
+@media (min-width:1025px) {
+	.col-d-1, .col-d-2, .col-d-3, .col-d-4, .col-d-6, .col-d-8, .col-d-12 {float:left}
+	.col-d-1 {width:8.33333333%}
+	.col-d-3 {width:25%}
+	.col-d-4 {width:33.33333333%}
+	.col-d-6 {width:50%}
+	.col-d-8 {width:66.66666666%}
+	.col-d-12 {width:100%}
+}
 </code></pre>
 				<!--//code-->
 				<div class="result">
@@ -145,17 +211,17 @@ button, input[type=button], input[type=submit] {-webkit-appearance:none;-webkit-
 						<div class="col-d-4">.col-d-4</div>
 					</div>
 					<div class="row">
-						<div class="col-d-3">.col-d-3</div>
-						<div class="col-d-3">.col-d-3</div>
-						<div class="col-d-3">.col-d-3</div>
-						<div class="col-d-3">.col-d-3</div>
+						<div class="col-t-6 col-d-3">.col-t-6 .col-d-3</div>
+						<div class="col-t-6 col-d-3">.col-t-6 .col-d-3</div>
+						<div class="col-t-6 col-d-3">.col-t-6 .col-d-3</div>
+						<div class="col-t-6 col-d-3">.col-t-6 .col-d-3</div>
 					</div>
 					<div class="row">
 						<div class="col-d-6">.col-d-6</div>
 						<div class="col-d-6">.col-d-6</div>
 					</div>
 					<div class="row">
-						<div class="col-d-12">.col-d-12</div>
+						<div class="col-s-6 col-t-6 col-d-12">.col-s-6 .col-d-12</div>
 					</div>
 				</div>
 			</article>
