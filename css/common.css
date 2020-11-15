@@ -31,3 +31,12 @@ figcaption {margin-top:5px;font-size:14px;color:#aaa}
 	color:#666;
 	box-sizing:border-box;
 }
+.list li {
+	border:1px solid #aaa;
+	box-sizing:border-box;
+	background:#eee;
+}
+.info {
+	padding-bottom:10px;
+	border-bottom:1px solid #aaa;
+}
