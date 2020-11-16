@@ -36,6 +36,12 @@ figcaption {margin-top:5px;font-size:14px;color:#aaa}
 	box-sizing:border-box;
 	background:#eee;
 }
+.list-box li {
+	padding:10px;
+	border:1px solid #aaa;
+	box-sizing:border-box;
+	background:#eee;
+}
 .info {
 	padding-bottom:10px;
 	border-bottom:1px solid #aaa;

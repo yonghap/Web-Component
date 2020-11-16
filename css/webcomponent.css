@@ -20,6 +20,9 @@ button, input[type=button], input[type=submit] {-webkit-appearance:none;-webkit-
 	flex-basis:25%;
 	padding:20px;
 }
+.list-box li {
+	margin:10px 0;
+}
 .info {
 	display:flex;
 	justify-content:space-between
