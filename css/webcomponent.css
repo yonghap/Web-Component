@@ -3,6 +3,7 @@ html,body,div,dl,dt,dd,ul,ol,li,h1,h2,h3,h4,h5,h6,form,fieldset,p,input,textarea
 body {-webkit-text-size-adjust:none}
 a {color:#0080cc;text-decoration:none}
 img {max-width:100%;border:none;vertical-align:top}
+button, input, select, textarea {font-family:inherit}
 button, input[type=button], input[type=submit] {-webkit-appearance:none;-webkit-border-radius:none}
 .blind {visibility:hidden; overflow:hidden; position:absolute; top:0; left:0; width:1px; height:1px; font-size:0; line-height:0}
 
@@ -29,7 +30,7 @@ button, input[type=button], input[type=submit] {-webkit-appearance:none;-webkit-
 /* typography */
 .h1 {font-size:40px}
 .h2 {margin-bottom:10px;font-size:34px}
-.h3 {margin-top:20px;margin-bottom:10px;font-size:26px;color:#444}
+.h3 {margin-top:24px;margin-bottom:10px;font-size:26px;color:#444}
 .h4 {margin-top:15px;margin-bottom:10px;font-size:20px;color:#666}
 .h6 {margin-bottom:15px;font-size:14px;color:#888;}
 small, .small {font-size:65%;color:#666}
@@ -103,6 +104,11 @@ label {
 	font-weight:700;
 	color:#333;
 }
+.checkbox label, .radio label {
+	margin-bottom:0;
+	padding-left:20px;
+	font-weight:400;
+}
 .form-group {
 	margin-bottom:15px
 }
@@ -135,6 +141,48 @@ label {
 	content:'';
 	display:table;
 	clear:both;
+}
+input[type=checkbox], input[type=radio] {
+	margin:6px 0 0;
+}
+.checkbox input[type=checkbox],
+.radio input[type=radio]{
+	position:absolute;
+	margin-left:-20px;
+}
+.checkbox-inline .checkbox,
+.radio-inline .radio {
+	display:inline-block
+}
+.checkbox-inline .checkbox + .checkbox,
+.radio-inline .radio + .radio {
+	margin-left:10px
+}
+.select {
+	display:block;
+	width:100%;
+	padding:6px;
+	border:1px solid #ccc;
+	color:#555;
+	box-sizing:border-box;
+	outline:none;
+	-webkit-box-shadow:inset 0 1px 1px rgba(0,0,0,.075);
+	box-shadow:inset 0 1px 1px rgba(0,0,0,.075)
+}
+.select-inline .select {
+	display:inline-block;
+	width:auto;
+}
+.textarea {
+	display:block;
+	width:100%;
+	padding:10px;
+	border:1px solid #ccc;
+	color:#555;
+	box-sizing:border-box;
+	outline:none;
+	-webkit-box-shadow:inset 0 1px 1px rgba(0,0,0,.075);
+	box-shadow:inset 0 1px 1px rgba(0,0,0,.075)
 }
 /* grid */
 .row:after {
