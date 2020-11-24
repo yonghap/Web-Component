@@ -206,6 +206,16 @@ input[type=checkbox], input[type=radio] {
 	flex-basis:100%;
 	margin-top:5px;
 }
+.email-inline {
+	display:flex;
+}
+.email-inline .form-group {
+	flex-basis:70%;
+	margin-bottom:0;
+}
+.email-inline .select {
+	margin-left:8px;
+}
 /* grid */
 .row:after {
 	content:'';
