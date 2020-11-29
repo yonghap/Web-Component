@@ -30,7 +30,6 @@ button, input[type=button], input[type=submit] {-webkit-appearance:none;-webkit-
 .h4 {margin-top:15px;margin-bottom:10px;font-size:20px;color:#666}
 .h6 {margin-bottom:15px;font-size:14px;color:#888;}
 small, .small {font-size:65%;color:#666}
-
 /*table*/
 .table {
 	table-layout:fixed;
@@ -273,4 +272,38 @@ input[type=checkbox], input[type=radio] {
 	.h4 {margin-top:15px;margin-bottom:10px;font-size:18px;color:#666}
 	.h6 {margin-bottom:15px;font-size:14px;color:#888;}
 	.article {padding:0 12px}
+}
+
+/*modal*/
+.modal {
+	display:none;
+	position:fixed;
+	top:0;
+	right:0;
+	bottom:0;
+	left:0;
+	z-index:100;
+}
+.modal__bg {
+	position:absolute;
+	top:0;
+	right:0;
+	bottom:0;
+	left:0;
+	background:#000;
+	opacity:.5;
+}
+.modal__wrap {
+	display:flex;
+	position:relative;
+	height:100%;
+	padding:30px 0;
+	justify-content:center;
+	align-items:center;
+	box-sizing:border-box;
+	z-index:1;
+}
+.modal__inner {
+	width:600px;
+	background:#fff;
 }
