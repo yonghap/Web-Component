@@ -18,7 +18,11 @@
 <body class="theme">
 	<div id="wrap" class="wrap">
 		<header id="header" class="header">
-			<h1 class="h1">Web Component</h1>
+			<div class="header__box">
+				<a href="#doctype">html</a>
+				<a href="#reset">css</a>
+				<a href="#modal">javascript</a>
+			</div>
 			<p class="description">
 				개인용 Web Component 입니다.<br>
 				BEM CSS 방법론을 사용합니다.<br>
@@ -1133,8 +1137,8 @@ button, input[type=button], input[type=submit] {-webkit-appearance:none;-webkit-
 
 		<div class="line"></div>
 
-		<section class="section">
-			<h2 class="h2"><a href="#js"># Modal</a></h2>
+		<section class="section" id="modal">
+			<h2 class="h2"><a href="#modal"># Modal</a></h2>
 			<article class="article">
 				<p class="description">
 					모달 팝업입니다.
@@ -1149,8 +1153,19 @@ button, input[type=button], input[type=submit] {-webkit-appearance:none;-webkit-
 							<header class="modal__header">
 								<h2>Modal Popup</h2>
 							</header>
-							<div class="modal__body"></div>
-							<footer class="modal__footer"></footer>
+							<div class="modal__body">
+								Lorem ipsum dolor sit amet, consectetur adipisicing elit. Harum id maxime mollitia perspiciatis quis, quo quod. Animi labore nihil voluptatibus?
+								<br><br>
+								Lorem ipsum dolor sit amet, consectetur adipisicing elit. Cumque, dolorum est nesciunt pariatur quasi sapiente vero voluptates. Aliquid doloremque enim eos incidunt, ipsam ipsum iure necessitatibus, nulla quae reiciendis, velit!
+							</div>
+							<footer class="modal__footer">
+								<button type="button" class="btn btn-default">
+									닫 기
+								</button>
+								<button type="button" class="btn btn-success">
+									확 인
+								</button>
+							</footer>
 						</div>
 					</div>
 				</div>
