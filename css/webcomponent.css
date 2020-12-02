@@ -308,7 +308,7 @@ input[type=checkbox], input[type=radio] {
 	border-radius:8px;
 	background:#fff;
 	-webkit-box-shadow:4px 6px 15px rgba(0,0,0,.3);
-	box-shadow:4px 6px 15px rgba(0,0,0,.3)
+	box-shadow:4px 6px 15px rgba(0,0,0,.3);
 }
 .modal__header {
 	padding:15px;
