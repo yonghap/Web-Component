@@ -22,5 +22,6 @@
 - Button : https://yonghap.github.io/Web-Component/#button
 - Input : https://yonghap.github.io/Web-Component/#input
 
-## :sun_with_face: JavaScript
+## :sun_with_face: JavaScript(jQuery)
 
+- Modal : https://yonghap.github.io/Web-Component/#modal
