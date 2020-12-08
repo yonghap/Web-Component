@@ -15,7 +15,7 @@ code {font-family:'Source Code Pro';padding:15px !important;font-size:13px}
 /* content */
 .wrap {max-width:1120px;margin:0 auto;padding:0 40px 40px;font-family:'Noto Sans KR','Roboto','serif';font-size:16px;color:#111;line-height:1.68}
 .header {margin-bottom:40px;padding-top:80px;}
-.header__box {position:fixed;top:0;left:50%;width:1120px;margin-left:-560px;padding:20px 0;background:rgba(255,255,255,.7);}
+.header__box {position:fixed;top:0;left:50%;width:1120px;margin-left:-560px;padding:20px 0;background:rgba(255,255,255,.8);}
 .header__box a {margin-right:15px;font-size:20px}
 .header .description {margin-top:10px}
 .section {margin-bottom:50px}
