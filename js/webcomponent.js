@@ -21,3 +21,14 @@ $(function () {
 	}
 	Modal.bind();
 });
+
+$.fn.tab = function (e) {
+	// return this.each(function () {
+
+	// })
+	console.log(e)
+}
+$('.tab-menu a').click(function (e) {
+	e.preventDefault();
+	$(this).tab('show');
+})

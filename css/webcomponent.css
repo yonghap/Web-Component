@@ -322,3 +322,31 @@ input[type=checkbox], input[type=radio] {
 	padding:15px;
 	text-align:right
 }
+/*tab*/
+.tab-menu {
+	display:flex
+}
+.tab-menu a {
+	flex-grow:1;
+	padding:10px 0;
+	border-left:1px solid #ccc;
+	background:#eee;
+	color:#333;
+	text-align:center
+}
+.tab-menu a.active {
+	background:#0080cc;
+	color:#fff;
+}
+.tab-menu a:first-child {
+	border-left:0
+}
+.tab-content {
+	display:none;
+	padding:30px;
+	font-size:14px;
+	color:#666;
+}
+.tab-content.active {
+	display:block;
+}

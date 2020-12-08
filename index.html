@@ -1224,28 +1224,31 @@ button, input[type=button], input[type=submit] {-webkit-appearance:none;-webkit-
 		</section>
 
 		<section class="section">
-			<h2 class="h2"><a href="#tab"># Tab</h2>
+			<h2 class="h2"><a href="#tab"># Tab</a></h2>
 			<article class="article">
 				<p class="description">기본 탭메뉴입니다.</p>
 				<div class="result">
 					<h6 class="h6">EXAMPLE</h6>
 					<div class="tab-menu">
-						<a href="#tab1">Tab 1</a>
+						<a href="#tab1" class="active">Tab 1</a>
 						<a href="#tab2">Tab 2</a>
 						<a href="#tab3">Tab 3</a>
 					</div>
 					<div class="tab-contents">
-						<div class="tab-content" id="tab1">
-							1. Lorem.
+						<div class="tab-content active" id="tab1">
+							1. Lorem ipsum dolor sit amet, consectetur adipisicing elit. Possimus, vero!
 						</div>
 						<div class="tab-content" id="tab2">
-							2. Lorem ipsum.
+							2. Lorem ipsum dolor sit amet, consectetur adipisicing elit. Deleniti eius impedit ipsum libero magnam nisi odit quaerat rem vel voluptate!
 						</div>
 						<div class="tab-content" id="tab3">
-							3. Lorem ipsum dolor.
+							3. Lorem ipsum dolor sit amet, consectetur adipisicing elit. Aliquid eligendi eos molestias quaerat repellat voluptatibus.
 						</div>
 					</div>
 				</div>
+				<script>
+					$('.tab-menu a:first-child').tab('show');
+				</script>
 			</article>
 		</section>
 		<!--default
