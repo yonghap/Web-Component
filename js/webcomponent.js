@@ -24,7 +24,9 @@ $(function () {
 
 $.fn.tab = function (e) {
 	return this.each(function () {
-		console.log($(this).html());
+		var target = $(this).attr('href');
+		$(this).addClass('active').siblings().removeClass('active');
+		$(target).siblings().removeClass('active');
 	})
 }
 $('.tab-menu a').click(function (e) {
