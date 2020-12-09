@@ -23,12 +23,12 @@ $(function () {
 });
 
 $.fn.tab = function (e) {
-	// return this.each(function () {
-
-	// })
-	console.log(e)
+	return this.each(function () {
+		console.log($(this).html());
+	})
 }
 $('.tab-menu a').click(function (e) {
 	e.preventDefault();
+
 	$(this).tab('show');
 })
