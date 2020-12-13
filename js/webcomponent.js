@@ -26,11 +26,11 @@ $.fn.tab = function (e) {
 	return this.each(function () {
 		var target = $(this).attr('href');
 		$(this).addClass('active').siblings().removeClass('active');
-		$(target).siblings().removeClass('active');
+		console.log(target);
+		$(target).addClass('active').siblings().removeClass('active');
 	})
 }
 $('.tab-menu a').click(function (e) {
 	e.preventDefault();
-
 	$(this).tab('show');
-})
+});
