@@ -350,3 +350,19 @@ input[type=checkbox], input[type=radio] {
 .tab-content.active {
 	display:block;
 }
+/*accordion*/
+.accordion__item {
+	margin:5px 0;
+}
+.accordion__title {
+	padding:10px 15px;
+	border:1px solid #ccc;
+	border-radius:10px;
+	background:#eee;
+}
+.accordion__body {
+	padding:20px;
+}
+.accordion__body.active {
+
+}

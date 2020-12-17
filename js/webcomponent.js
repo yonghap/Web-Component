@@ -34,3 +34,15 @@ $('.tab-menu a').click(function (e) {
 	e.preventDefault();
 	$(this).tab('show');
 });
+
+$.fn.accordion = function (e) {
+	return this.each(function () {
+		var target = $(this).attr('href');
+		$(target).addClass('active');
+		console.log($(target).height());
+	})
+}
+$('.accordion__title a').click(function (e) {
+	e.preventDefault();
+	$(this).accordion('show');
+});
