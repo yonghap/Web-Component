@@ -1307,15 +1307,7 @@ $('.tab-menu a:eq(2)').tab(); // 기본 활성화시킬 탭
 									<a href="#accordionTwo">Accordion Item 2</a>
 								</h4>
 								<div class="accordion__body" id="accordionTwo">
-									Lorem ipsum dolor sit amet, consectetur adipisicing.<br>
-									Lorem ipsum dolor sit amet, consectetur adipisicing.<br>
-									Lorem ipsum dolor sit amet, consectetur adipisicing.<br>
-									Lorem ipsum dolor sit amet, consectetur adipisicing.<br>
-									Lorem ipsum dolor sit amet, consectetur adipisicing.<br>
-									Lorem ipsum dolor sit amet, consectetur adipisicing.<br>
-									Lorem ipsum dolor sit amet, consectetur adipisicing.<br>
-									Lorem ipsum dolor sit amet, consectetur adipisicing.<br>
-									Lorem ipsum dolor sit amet, consectetur adipisicing.<br>
+									Lorem ipsum dolor sit amet, consectetur adipisicing.
 								</div>
 							</div>
 							<div class="accordion__item">
@@ -1329,6 +1321,48 @@ $('.tab-menu a:eq(2)').tab(); // 기본 활성화시킬 탭
 						</div>
 					</div>
 				</div>
+				<!--code-->
+<pre><code class="language-js">$.fn.accordion = function (e) {
+	return this.each(function () {
+		var target = $(this).attr('href');
+		$(target).addClass('active');
+		$(target).slideToggle('fast');
+	})
+}
+$('.accordion__title a').click(function (e) {
+	e.preventDefault();
+	$(this).accordion('show');
+});
+</code></pre>
+
+<!--code-->
+<pre><code class="language-html"><div class="accordion">
+	<div class="accordion__item">
+		<h4 class="accordion__title">
+			<a href="#accordionOne">Accordion Item 1</a>
+		</h4>
+		<div class="accordion__body" id="accordionOne">
+			Lorem ipsum dolor sit amet, consectetur adipisicing elit. Consequatur, vel.
+		</div>
+	</div>
+	<div class="accordion__item">
+		<h4 class="accordion__title">
+			<a href="#accordionTwo">Accordion Item 2</a>
+		</h4>
+		<div class="accordion__body" id="accordionTwo">
+			Lorem ipsum dolor sit amet, consectetur adipisicing.
+		</div>
+	</div>
+	<div class="accordion__item">
+		<h4 class="accordion__title">
+			<a href="#accordionThree">Accordion Item 3</a>
+		</h4>
+		<div class="accordion__body" id="accordionThree">
+			Lorem ipsum dolor.
+		</div>
+	</div>
+</div>
+</code></pre>
 			</article>
 		</section>
 

@@ -361,6 +361,7 @@ input[type=checkbox], input[type=radio] {
 	background:#eee;
 }
 .accordion__body {
+	display:none;
 	padding:20px;
 }
 .accordion__body.active {

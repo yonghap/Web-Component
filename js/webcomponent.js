@@ -26,7 +26,6 @@ $.fn.tab = function (e) {
 	return this.each(function () {
 		var target = $(this).attr('href');
 		$(this).addClass('active').siblings().removeClass('active');
-		console.log(target);
 		$(target).addClass('active').siblings().removeClass('active');
 	})
 }
@@ -39,7 +38,7 @@ $.fn.accordion = function (e) {
 	return this.each(function () {
 		var target = $(this).attr('href');
 		$(target).addClass('active');
-		console.log($(target).height());
+		$(target).slideToggle('fast');
 	})
 }
 $('.accordion__title a').click(function (e) {
