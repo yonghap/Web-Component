@@ -1,6 +1,7 @@
 # Web Component
 
 자주 사용하는 CSS 컴포넌트 모음입니다.<br>
+jQuery 기반입니다.<br>
 프로젝트에 따라 수정하여 사용합니다.
 
 <a href="https://yonghap.github.io/Web-Component/" target="_blank">
@@ -25,3 +26,5 @@
 ## :sun_with_face: JavaScript(jQuery)
 
 - Modal : https://yonghap.github.io/Web-Component/#modal
+- Modal : https://yonghap.github.io/Web-Component/#tab
+- Modal : https://yonghap.github.io/Web-Component/#accordion
