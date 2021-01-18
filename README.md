@@ -26,5 +26,5 @@ jQuery 기반입니다.<br>
 ## :sun_with_face: JavaScript(jQuery)
 
 - Modal : https://yonghap.github.io/Web-Component/#modal
-- Modal : https://yonghap.github.io/Web-Component/#tab
-- Modal : https://yonghap.github.io/Web-Component/#accordion
+- Tab : https://yonghap.github.io/Web-Component/#tab
+- Accordion : https://yonghap.github.io/Web-Component/#accordion
