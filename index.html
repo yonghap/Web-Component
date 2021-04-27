@@ -235,6 +235,29 @@ button, input[type=button], input[type=submit] {-webkit-appearance:none;-webkit-
 			</article>
 		</section>
 
+		<!-- webfont-->
+		<section class="section" id="webfont">
+			<h2 class="h2"><a href="#webfont"># Webfont</a></h2>
+			<article class="article">
+				<p class="description">
+					프로젝트의 IE지원 상황에 맞게 웹폰트 코드를 사용합니다.<br>
+					#iefix는 IE 지원 상황에 맞게 추가합니다.
+				</p>
+
+				<!--code-->
+				<pre><code class="language-css">@font-face {
+font-family: 'Noto Sans KR';
+src:url(./common/css/fonts/NotoSans-Light.eot);  /* IE 8 이하 */
+src:
+	local('☺'), /* IE 8 이하에서 다운로드 방지 */
+	url(./common/css/fonts/NotoSans-Light.woff2) format('woff2'), /* Chrome, Firefox, Safari, Opera */
+	url(./common/css/fonts/NotoSans-Light.woff) format('woff'); /* IE 9+, Chrome, Firefox, Safari, Opera */
+}
+</code></pre>
+				<!--//code-->
+			</article>
+		</section>
+
 		<!--grid-->
 		<section class="section" id="grid">
 			<h2 class="h2"><a href="#grid"># Grid System</a></h2>

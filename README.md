@@ -17,6 +17,7 @@ jQuery 기반입니다.<br>
 ## :art: CSS
 
 - Reset : https://yonghap.github.io/Web-Component/#reset
+- Webfont : https://yonghap.github.io/Web-Component/#webfont
 - Grid System : https://yonghap.github.io/Web-Component/#grid
 - Typography : https://yonghap.github.io/Web-Component/#typography
 - Table : https://yonghap.github.io/Web-Component/#table
