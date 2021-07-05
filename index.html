@@ -243,7 +243,7 @@ button, input[type=button], input[type=submit] {-webkit-appearance:none;-webkit-
 					프로젝트의 IE지원 상황에 맞게 웹폰트 코드를 사용합니다.<br>
 					#iefix는 IE 지원 상황에 맞게 추가합니다.
 				</p>
-
+				<h3 class="h3"># 구버전 IE 지원 </h3>
 				<!--code-->
 				<pre><code class="language-css">@font-face {
 font-family: 'Noto Sans KR';
@@ -254,6 +254,20 @@ src:
 	url(./common/css/fonts/NotoSans-Light.woff) format('woff'); /* IE 9+, Chrome, Firefox, Safari, Opera */
 }
 </code></pre>
+			</article>
+			<article class="article">
+				<h3 class="h3"># IE11+ 지원 </h3>
+				<!--code-->
+				<pre><code class="language-css">@font-face {
+font-family: 'Noto Sans KR';
+font-weight:400;
+src:
+		local(※), /* IE fix */
+		url(./fonts/NotoSans-Regular.woff2) format('woff2'),
+		url(./fonts/NotoSans-Regular.woff) format('woff');
+}
+</code></pre>
+
 				<!--//code-->
 			</article>
 		</section>
