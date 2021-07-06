@@ -101,8 +101,18 @@ label {
 }
 .checkbox label, .radio label {
 	margin-bottom:0;
-	padding-left:20px;
 	font-weight:400;
+}
+.check-custom {
+	display:inline-block;
+	width:14px;
+	height:14px;
+	border:1px solid #333
+}
+input[type=checkbox]:checked ~ .check-custom,
+input[type=radio]:checked ~ .check-custom {
+	border-color:#0080cc;
+	background:#0080cc;
 }
 .form-input {
 	display:block;
@@ -138,11 +148,6 @@ label {
 }
 input[type=checkbox], input[type=radio] {
 	margin:6px 0 0;
-}
-.checkbox input[type=checkbox],
-.radio input[type=radio]{
-	position:absolute;
-	margin-left:-20px;
 }
 .checkbox-inline .checkbox,
 .radio-inline .radio {
