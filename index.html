@@ -24,10 +24,13 @@
 			</div>
 			<p class="description">
 				개인용 Web Component 입니다.<br>
+				퍼블리싱 빠르고 효율적으로 하기 위해 작성하였습니다.<br>
 				BEM CSS 방법론을 사용합니다.<br>
 				부트스트랩과 메테리얼 CSS를 참고했습니다.<br><br>
-				구성요소를 감쌀때는 -wrap 접미사를 사용합니다.<br>
-				ex) .table-wrap / .input-wrap / .list-wrap
+				구성요소를 감쌀때는 -wrap, -inner, -box 접미사 순서대로를 사용합니다.<br>
+				ex) .table-wrap / .input-wrap / .list-wrap<br>
+				ex) .table-inner / .input-inner / .list-inner<br>
+				ex) .table-box / .input-box / .list-box
 			</p>
 		</header>
 		<!-- doctype -->
@@ -167,6 +170,18 @@ function sum(x, y) {
 	box-sizing:border-box;
 }
 </code></pre>
+					<!--code-->
+<pre><code class="language-css">.list:after {
+	content:'';
+	display:block;
+	clear:both;
+}
+.list li {
+	float:left;
+	width:25%;
+}
+</code></pre>
+
 					<!--//code-->
 				</div>
 
@@ -228,7 +243,6 @@ ul,ol,li {list-style:none}
 a {text-decoration:none}
 img {max-width:100%;border:none;vertical-align:top}
 button, input[type=button], input[type=submit] {-webkit-appearance:none;-webkit-border-radius:none}
-
 .blind {visibility:hidden; overflow:hidden; position:absolute; top:0; left:0; width:1px; height:1px; font-size:0; line-height:0}
 </code></pre>
 				<!--//code-->
