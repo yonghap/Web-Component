@@ -1,0 +1,23 @@
+@charset "UTF-8"; /*reset*/
+html, body, div, dl, dt, dd, ul, ol, li, h1, h2, h3, h4, h5, h6, form, fieldset, p, input, textarea, select, button, th, td, blockquote {margin:0;padding:0}
+body {-webkit-text-size-adjust:none}
+a {color:#0080cc;text-decoration:none}
+img {max-width:100%;border:none;vertical-align:top}
+button, input, select, textarea {font-family:inherit}
+button, input[type=button], input[type=submit] {-webkit-appearance:none;-webkit-border-radius:none}
+.blind {visibility:hidden;overflow:hidden;position:absolute;top:0;left:0;width:1px;height:1px;font-size:0;line-height:0}
+
+.wrap {color:#222;line-height:1.625}
+h2 {font-size:2em}
+h3 {font-size:1.6em}
+h4 {font-size:1.2em}
+/*BUTTON*/
+.btn {display:inline-block;padding:6px 12px;border:1px solid #d8d8d8;border-radius:4px;background:none;font-family:inherit;font-size:14px;color:inherit;line-height:inherit;text-align:center;vertical-align:top;user-select:none;cursor:pointer;outline:none;box-sizing:border-box}
+.btn--primary {border-color:#222;background:#222;color:#fff}
+.btn--success {border-color:#0080cc;background:#0080cc;color:#fff}
+.btn--secondary {border-color:#FFEB60;background:#FFEB60;color:#222}
+.btn--alert {border-color:#ee1c29;background:#ee1c29;color:#fff}
+.btn--disabled {border-color:#d8d8d8;background:#d8d8d8;color:#999}
+.btn--md {padding:12px 24px;font-size:1em}
+.btn--lg {padding:20px 30px;font-size:1.2em}
+.btn--full {width:100%}

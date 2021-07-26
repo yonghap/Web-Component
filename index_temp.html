@@ -1,0 +1,88 @@
+<!doctype html>
+<html lang="ko">
+<head>
+	<meta charset="UTF-8">
+	<meta name="viewport"
+	      content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0">
+	<meta http-equiv="X-UA-Compatible" content="ie=edge">
+	<title>Web Component</title>
+	<script src="./js/jquery-latest.min.js"></script>
+	<!--<link rel="stylesheet"
+	      href="https://cdn.jsdelivr.net/gh/highlightjs/cdn-release@10.3.2/build/styles/default.min.css">-->
+	<script src="https://cdn.jsdelivr.net/gh/highlightjs/cdn-release@10.3.2/build/highlight.min.js"></script>
+	<link rel="stylesheet" href="./css/tomorrow-night-eighties.css">
+	<link rel="stylesheet" href="./css/common2.css?d=1112">
+	<link rel="stylesheet" href="./css/webcomponents.css?d=1112">
+</head>
+<body class="theme">
+<div id="wrap" class="wrap">
+	<!--Button-->
+	<section class="section" id="button">
+		<h2 class="h2"><a href="#button"># Button</a></h2>
+		<div class="article">
+			<div class="result">
+				<h4 class="h4">.btn</h4>
+				<a href="#" class="btn">Link</a>
+				<button type="button" role="button" class="btn">Button</button>
+				<a href="#" class="btn">링크</a>
+				<button type="button" role="button" class="btn">버튼명</button>
+				<h4 class="h4">.btn--primary</h4>
+				<a href="#" class="btn btn--primary">Link</a>
+				<button type="button" role="button" class="btn btn--primary">Button</button>
+				<a href="#" class="btn btn--primary">링크</a>
+				<button type="button" role="button" class="btn btn--primary">버튼명</button>
+				<h4 class="h4">.btn--success</h4>
+				<a href="#" class="btn btn--success">Link</a>
+				<button type="button" role="button" class="btn btn--success">Button</button>
+				<a href="#" class="btn btn--success">링크</a>
+				<button type="button" role="button" class="btn btn--success">버튼명</button>
+				<h4 class="h4">.btn--secondary</h4>
+				<a href="#" class="btn btn--secondary">Link</a>
+				<button type="button" role="button" class="btn btn--secondary">Button</button>
+				<a href="#" class="btn btn--secondary">링크</a>
+				<button type="button" role="button" class="btn btn--secondary">버튼명</button>
+				<h4 class="h4">.btn--alert</h4>
+				<a href="#" class="btn btn--alert">Link</a>
+				<button type="button" role="button" class="btn btn--alert">Button</button>
+				<a href="#" class="btn btn--alert">링크</a>
+				<button type="button" role="button" class="btn btn--alert">버튼명</button>
+				<h4 class="h4">.btn--disabled</h4>
+				<a href="#" class="btn btn--disabled">Link</a>
+				<button type="button" role="button" class="btn btn--disabled">Button</button>
+				<a href="#" class="btn btn--disabled">링크</a>
+				<button type="button" role="button" class="btn btn--disabled">버튼명</button>
+			</div>
+			<div class="result">
+				<h4 class="h4">.btn--medium</h4>
+				<a href="#" class="btn btn--md">Link</a>
+				<button type="button" role="button" class="btn btn--md btn--primary">버튼명</button>
+				<a href="#" class="btn btn--md btn--secondary">Link</a>
+				<button type="button" role="button" class="btn btn--md btn--alert">버튼명</button>
+				<h4 class="h4">.btn--lg</h4>
+				<a href="#" class="btn btn--lg">Link</a>
+				<button type="button" role="button" class="btn btn--lg btn--primary">버튼명</button>
+				<a href="#" class="btn btn--lg btn--secondary">Link</a>
+				<button type="button" role="button" class="btn btn--lg btn--alert">버튼명</button>
+				<h4 class="h4">.btn--full</h4>
+				<a href="#" class="btn btn--full">Link</a>
+				<button type="button" role="button" class="btn btn--full btn--primary">버튼명</button>
+				<a href="#" class="btn btn--md btn--full btn--success">Link</a>
+				<button type="button" role="button" class="btn btn--lg btn--full btn--alert">버튼명</button>
+			</div>
+		</div>
+	</section>
+	<!--//Button-->
+</div>
+
+
+<script>
+	document.querySelectorAll("code").forEach(function (element) {
+		element.innerHTML = element.innerHTML.replace(/</g, "&lt;").replace(/>/g, "&gt;").replace(/"/g, "&quot;").replace(/'/g, "&#039;");
+	});
+	$(document).ready(function () {
+		hljs.configure({tabReplace: '    '});
+		hljs.initHighlighting();
+	});
+</script>
+</body>
+</html>
