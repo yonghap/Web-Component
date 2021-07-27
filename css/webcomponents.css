@@ -21,3 +21,6 @@ h4 {font-size:1.2em}
 .btn--md {padding:12px 24px;font-size:1em}
 .btn--lg {padding:20px 30px;font-size:1.2em}
 .btn--full {width:100%}
+/*ICON*/
+.i {display:inline-block;background-image:url(../imgs/css_sprites.png);background-repeat:no-repeat;vertical-align:top;text-indent:-9999px}
+.i--search {width:21px;height:21px;background-position:-10px -10px}
