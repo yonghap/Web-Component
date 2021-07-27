@@ -22,5 +22,12 @@ h4 {font-size:1.2em}
 .btn--lg {padding:20px 30px;font-size:1.2em}
 .btn--full {width:100%}
 /*ICON*/
-.i {display:inline-block;background-image:url(../imgs/css_sprites.png);background-repeat:no-repeat;vertical-align:top;text-indent:-9999px}
-.i--search {width:21px;height:21px;background-position:-10px -10px}
+.i {display:inline-block;background-repeat:no-repeat;vertical-align:top;text-indent:-9999px}
+.i-checkbox {width:20px;height:20px;background-image:url(../imgs/sprite_checkbox.png)}
+.i-checkbox--default {background-position:-10px -10px}
+.i-checkbox--checked {background-position:-50px -10px}
+.i-checkbox--alert {background-position:-10px -50px}
+.i-sns {width:25px;height:25px;background-image:url(../imgs/sprite_sns.png)}
+.i-sns--naver {background-position:-55px -10px}
+.i-sns--kakao {background-position:-10px -55px}
+.i-sns--fb {background-position:-10px -10px}
