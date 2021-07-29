@@ -28,14 +28,14 @@ small, .small {font-size:65%;color:#666}
 .table td {border-bottom:1px solid #eee}
 .table--label tr:first-child td {border-top:1px solid #eee}
 /*button*/
-.btn {display:inline-block;padding:6px 12px;border:1px solid transparent;border-radius:4px;background:none;font-family:inherit;font-size:14px;color:#333;line-height:1.43;text-align:center;vertical-align:top;user-select:none;cursor:pointer;outline:none}
+.btn {display:inline-block;padding:6px 12px;border:1px solid transparent;border-radius:4px;background:none;font-family:inherit;font-size:14px;color:#333;line-height:1.43;text-align:center;vertical-align:top;user-select:none;cursor:pointer;outline:none;box-sizing:border-box}
 .btn-large {padding:12px 18px;font-size:16px}
-.btn-small { padding:4px 8px; font-size:12px; }
-.btn-default { border-color:#ccc; }
-.btn-success { background:#0080cc; color:#fff; }
-.btn-alert { background:#cc1f00; color:#fff; }
-.btn-info { background:#00cc3a; color:#fff; }
-.btn-link { color:#0080cc; }
+.btn-small {padding:4px 8px; font-size:12px; }
+.btn-default {border-color:#ccc;}
+.btn-success {background:#0080cc;color:#fff; }
+.btn-alert {background:#cc1f00;color:#fff; }
+.btn-info {background:#00cc3a;color:#fff; }
+.btn-link {color:#0080cc;}
 /*forms*/
 label { display:inline-block; font-weight:700; color:#333; }
 .checkbox label, .radio label { margin-bottom:0; font-weight:400; }

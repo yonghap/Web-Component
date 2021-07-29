@@ -13,3 +13,4 @@ button, input[type=button], input[type=submit] {-webkit-appearance:none;-webkit-
 .h2 {margin-bottom:20px}
 .section {padding:50px 0}
 .result {display:inline-block;padding:0 20px;vertical-align:top}
+.result--block {display:block}

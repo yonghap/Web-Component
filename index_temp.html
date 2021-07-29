@@ -20,6 +20,9 @@
 	<section class="section" id="button">
 		<h2 class="h2"><a href="#button"># Button</a></h2>
 		<div class="article">
+			<p class="p">
+				기본 모양, 용도별, 크기별로 만듭니다.
+			</p>
 			<div class="result">
 				<h4 class="h4">.btn</h4>
 				<a href="#" class="btn">Link</a>
@@ -53,7 +56,7 @@
 				<button type="button" role="button" class="btn btn--disabled">버튼명</button>
 			</div>
 			<div class="result">
-				<h4 class="h4">.btn--medium</h4>
+				<h4 class="h4">.btn--md</h4>
 				<a href="#" class="btn btn--md">Link</a>
 				<button type="button" role="button" class="btn btn--md btn--primary">버튼명</button>
 				<a href="#" class="btn btn--md btn--secondary">Link</a>
@@ -69,13 +72,71 @@
 				<a href="#" class="btn btn--md btn--full btn--success">Link</a>
 				<button type="button" role="button" class="btn btn--lg btn--full btn--alert">버튼명</button>
 			</div>
+			<div class="result">
+				<h4 class="h4">.btn--fixed</h4>
+				<a href="#" class="btn btn--md btn--fixed">Link</a>
+				<button type="button" role="button" class="btn btn--md btn--primary btn--fixed">버튼명</button>
+				<a href="#" class="btn btn--md btn--secondary btn--fixed">Link</a>
+				<button type="button" role="button" class="btn btn--md btn--alert btn--fixed">버튼명</button>
+			</div>
 		</div>
 	</section>
 	<!--//Button-->
+	<!--Grid-->
+	<section class="section" id="grid">
+		<h2 class="h2"><a href="#grid"># Grid</a></h2>
+		<div class="article">
+			<p class="p">
+				12그리드 시스템을 사용합니다. <br>
+				모바일 : 768이하 <br>
+				태블릿 : 769이상 1024이하<br>
+				PC : 1025이상
+			</p>
+			<div class="result result--block">
+				<h4 class="h4">12 Grid</h4>
+				<div class="row">
+					<div class="col-t-6 col-d-12">.col-t-6 .col-d-12</div>
+				</div>
+				<div class="row">
+					<div class="col-m-12 col-t-6">.col-m-12 .col-t-6</div>
+				</div>
+				<div class="row">
+					<div class="col-t-6 col-d-3">.col-t-6 .col-d-3</div>
+					<div class="col-t-6 col-d-3">.col-t-6 .col-d-3</div>
+					<div class="col-t-6 col-d-3">.col-t-6 .col-d-3</div>
+					<div class="col-t-6 col-d-3">.col-t-6 .col-d-3</div>
+				</div>
+				<div class="row">
+					<div class="col-d-2">.col-d-2</div>
+					<div class="col-d-2">.col-d-2</div>
+					<div class="col-d-2">.col-d-2</div>
+					<div class="col-d-2">.col-d-2</div>
+					<div class="col-d-2">.col-d-2</div>
+					<div class="col-d-2">.col-d-2</div>
+				</div>
+				<h4 class="h4">Center</h4>
+				<div class="row">
+					<div class="col-d-6 col-d-offset-3">.col-t-6</div>
+				</div>
+				<div class="row">
+					<div class="col-d-4 col-d-offset-4">.col-t-4</div>
+				</div>
+				<h4 class="h4">Between</h4>
+				<div class="row">
+					<div class="col-d-2">.col-d-2</div>
+					<div class="col-d-2 col-d-offset-8">.col-d-2</div>
+				</div>
+			</div>
+		</div>
+	</section>
+	<!--//Grid-->
 	<!--Icon-->
 	<section class="section" id="button">
 		<h2 class="h2"><a href="#button"># Icon</a></h2>
 		<div class="article">
+			<p class="p">
+				스프라이트 이미지를 사용합니다.
+			</p>
 			<div class="result">
 				<h4 class="h4">.i-checkbox / .i-checkbox--success / .i-checkbox--alert</h4>
 				<i class="i i-checkbox i-checkbox--default">검색</i>
@@ -88,12 +149,13 @@
 			</div>
 		</div>
 	</section>
+	<!--//Icon-->
 	<!--Button + Icon-->
 	<section class="section" id="button">
 		<h2 class="h2"><a href="#button"># Button + Icon</a></h2>
 		<div class="article">
 			<div class="result">
-				<h4 class="h4">.btn--medium</h4>
+				<h4 class="h4">.btn--md</h4>
 				<a href="#" class="btn btn--md">
 					Naver <i class="i i-sns i-sns--naver"></i>
 				</a>
@@ -102,7 +164,19 @@
 					<i class="i i-sns i-sns--kakao"></i>
 				</button>
 				<button type="button" role="button" class="btn btn--md">
+					Facebook
+					<i class="i i-sns i-sns--fb"></i>
+				</button>
+				<h4 class="h4">.btn--lg</h4>
+				<a href="#" class="btn btn--lg">
+					Naver <i class="i i-sns i-sns--naver"></i>
+				</a>
+				<button type="button" role="button" class="btn btn--lg">
 					Kakao
+					<i class="i i-sns i-sns--kakao"></i>
+				</button>
+				<button type="button" role="button" class="btn btn--lg">
+					Facebook
 					<i class="i i-sns i-sns--fb"></i>
 				</button>
 			</div>
