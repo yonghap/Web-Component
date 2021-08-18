@@ -91,3 +91,7 @@ h4 {font-size:1.2em}
 .i-sns--naver {background-position:-55px -10px}
 .i-sns--kakao {background-position:-10px -55px}
 .i-sns--fb {background-position:-10px -10px}
+/*LIST*/
+.list {line-height:1.4}
+.list--blit li {padding:5px 0;padding-left:14px}
+.list--blit li span {display:inline-block;text-indent:-14px}
