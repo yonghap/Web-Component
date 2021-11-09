@@ -11,6 +11,10 @@ button, input[type=button], input[type=submit] {-webkit-appearance:none;-webkit-
 h2 {font-size:2em}
 h3 {font-size:1.6em}
 h4 {font-size:1.2em}
+.green {background:hsl(100, 64%, 86%)}
+.coral {background:hsl(23, 83%, 82%)}
+.blue {background:hsl(187, 61%, 79%)}
+.yellow {background:hsl(42, 97%, 85%)}
 /*BUTTON*/
 .btn {display:inline-block;padding:6px 12px;border:1px solid #ddd;border-radius:4px;background:none;font-family:inherit;font-size:14px;color:inherit;line-height:inherit;text-align:center;vertical-align:top;user-select:none;cursor:pointer;outline:none;box-sizing:border-box}
 .btn--primary {border-color:#222;background:#222;color:#fff}
@@ -96,5 +100,5 @@ h4 {font-size:1.2em}
 .list--horizontal:after {content:'';display:block;clear:both}
 .list--horizontal li {float:left;width:25%;padding:5px;border:1px solid #ddd;box-sizing:border-box}
 .list--flex {display:flex;justify-content:space-between}
-.list--flex li {flex-basis:20%;padding:5px;border:1px solid #ddd;box-sizing:border-box}
+.list--flex li {flex-basis:25%;padding:5px;border:1px solid #ddd;box-sizing:border-box}
 .list--vertical li {margin:5px 0;padding:5px;border:1px solid #dddd}
