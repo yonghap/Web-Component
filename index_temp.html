@@ -96,36 +96,36 @@
 			<div class="result result--block">
 				<h4 class="h4">12 Grid</h4>
 				<div class="row">
-					<div class="col-t-6 col-d-12">.col-t-6 .col-d-12</div>
+					<div class="col-t-6 col-d-12 green">.col-t-6 .col-d-12</div>
 				</div>
 				<div class="row">
-					<div class="col-m-12 col-t-6">.col-m-12 .col-t-6</div>
+					<div class="col-m-12 col-t-6 coral">.col-m-12 .col-t-6</div>
 				</div>
 				<div class="row">
-					<div class="col-t-6 col-d-3">.col-t-6 .col-d-3</div>
-					<div class="col-t-6 col-d-3">.col-t-6 .col-d-3</div>
-					<div class="col-t-6 col-d-3">.col-t-6 .col-d-3</div>
-					<div class="col-t-6 col-d-3">.col-t-6 .col-d-3</div>
+					<div class="col-t-6 col-d-3 green">.col-t-6 .col-d-3</div>
+					<div class="col-t-6 col-d-3 coral">.col-t-6 .col-d-3</div>
+					<div class="col-t-6 col-d-3 blue">.col-t-6 .col-d-3</div>
+					<div class="col-t-6 col-d-3 yellow">.col-t-6 .col-d-3</div>
 				</div>
 				<div class="row">
-					<div class="col-d-2">.col-d-2</div>
-					<div class="col-d-2">.col-d-2</div>
-					<div class="col-d-2">.col-d-2</div>
-					<div class="col-d-2">.col-d-2</div>
-					<div class="col-d-2">.col-d-2</div>
-					<div class="col-d-2">.col-d-2</div>
+					<div class="col-d-2 grey">.col-d-2</div>
+					<div class="col-d-2 grey">.col-d-2</div>
+					<div class="col-d-2 grey">.col-d-2</div>
+					<div class="col-d-2 grey">.col-d-2</div>
+					<div class="col-d-2 grey">.col-d-2</div>
+					<div class="col-d-2 grey">.col-d-2</div>
 				</div>
 				<h4 class="h4">Center</h4>
 				<div class="row">
-					<div class="col-d-6 col-d-offset-3">.col-t-6</div>
+					<div class="col-d-6 col-d-offset-3 yellow">.col-t-6</div>
 				</div>
 				<div class="row">
-					<div class="col-d-4 col-d-offset-4">.col-t-4</div>
+					<div class="col-d-4 col-d-offset-4 grey">.col-t-4</div>
 				</div>
 				<h4 class="h4">Between</h4>
 				<div class="row">
-					<div class="col-m-4 col-d-2">.col-d-2</div>
-					<div class="col-m-8 col-d-2 col-d-offset-8">.col-d-2</div>
+					<div class="col-m-4 col-d-2 blue">.col-d-2</div>
+					<div class="col-m-8 col-d-2 col-d-offset-8 yellow">.col-d-2</div>
 				</div>
 			</div>
 		</div>
@@ -136,7 +136,9 @@
 		<h2 class="h2"><a href="#button"># Icon</a></h2>
 		<div class="article">
 			<p class="p">
-				스프라이트 이미지를 사용합니다.
+				기본 스프라이트 이미지를 사용합니다.<br>
+				기능별 이미지가 정의되어 있을 경우 클래스를 따로 사용합니다.<br>
+				모든 아이콘이 전체적으로 쓰일 경우 하나의 클래스로 통일해서 쓸 수도 있습니다.
 			</p>
 			<div class="result">
 				<h4 class="h4">.i-checkbox / .i-checkbox--success / .i-checkbox--alert</h4>
@@ -147,6 +149,7 @@
 				<i class="i i-sns i-sns--naver">검색</i>
 				<i class="i i-sns i-sns--kakao">검색</i>
 				<i class="i i-sns i-sns--fb">검색</i>
+				<h4 class="h4">.i-naver / .i-kakao / .i-fb</h4>
 			</div>
 		</div>
 	</section>
@@ -179,11 +182,11 @@
 					<i class="i i-sns i-sns--naver"></i>
 				</a>
 				<button type="button" role="button" class="btn btn--lg">
-					Kakao
+					<span>Kakao</span>
 					<i class="i i-sns i-sns--kakao"></i>
 				</button>
 				<button type="button" role="button" class="btn btn--lg">
-					Facebook
+					<span>Facebook</span>
 					<i class="i i-sns i-sns--fb"></i>
 				</button>
 			</div>

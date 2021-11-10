@@ -15,6 +15,7 @@ h4 {font-size:1.2em}
 .coral {background:hsl(23, 83%, 82%)}
 .blue {background:hsl(187, 61%, 79%)}
 .yellow {background:hsl(42, 97%, 85%)}
+.grey {background:#d7d5d5}
 /*BUTTON*/
 .btn {display:inline-block;padding:6px 12px;border:1px solid #ddd;border-radius:4px;background:none;font-family:inherit;font-size:14px;color:inherit;line-height:inherit;text-align:center;vertical-align:top;user-select:none;cursor:pointer;outline:none;box-sizing:border-box}
 .btn--primary {border-color:#222;background:#222;color:#fff}
@@ -26,6 +27,7 @@ h4 {font-size:1.2em}
 .btn--lg {padding:20px 30px;font-size:1.2em}
 .btn--full {width:100%}
 .btn--fixed {min-width:200px}
+.btn span {display:inline-block;line-height:25px;vertical-align:top}
 /*GRID*/
 .row {margin:2px 0}
 .row:after {content:'';display:table;clear:both;}
