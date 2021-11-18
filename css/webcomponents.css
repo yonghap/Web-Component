@@ -17,7 +17,7 @@ h4 {font-size:1.2em}
 .yellow {background:hsl(42, 31%, 67%)}
 .grey {background:#d7d5d5}
 /*BUTTON*/
-.btn {display:inline-block;margin:0.2em;padding:0.4em 1em;border:1px solid #ddd;border-radius:4px;background:none;font-size:inherit;color:#333;line-height:inherit;vertical-align:top;box-sizing:border-box;cursor:pointer}
+.btn {display:inline-block;margin:0.2em;padding:0.4em 1em;border:1px solid #ddd;border-radius:4px;background:none;font-size:inherit;color:#333;line-height:inherit;vertical-align:top;box-sizing:border-box;text-align:center;cursor:pointer}
 .btn__text {font-size:0.8em}
 .btn--large {padding:0.8em 2em}
 .btn--large .btn__text {font-size:1.2em}
@@ -25,17 +25,12 @@ h4 {font-size:1.2em}
 .btn--medium .btn__text {font-size:1em}
 .btn--small {padding:0.2em 0.8em}
 .btn--small .btn__text {font-size:0.8em}
-
 .btn--primary {border-color:#0080cc;background:#0080cc;color:#fff}
 .btn--secondary {border-color:#0080cc;color:#0080cc}
 .btn--notice {border-color:#f79148;background:#f79148;color:#fff}
 .btn--alert {border-color:#aaa;background:#aaa;color:#fff}
-
-
-
 .btn--full {width:100%}
 .btn--fixed {min-width:200px}
-.btn span {display:inline-block;line-height:25px;vertical-align:top}
 /*GRID*/
 .row {margin:2px 0}
 .row:after {content:'';display:table;clear:both;}
