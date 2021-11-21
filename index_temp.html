@@ -101,7 +101,7 @@
 <button type="button" class="btn btn--notice">
 	<span class="btn__text">Notice</span>
 </button>
-<button type="button" class="btn btn--alert">
+<button type="button" class="btn btn--disabled">
 	<span class="btn__text">Cancel</span>
 </button>
 </code></pre>
@@ -116,7 +116,7 @@
 			<button type="button" class="btn btn--notice">
 				<span class="btn__text">Notice</span>
 			</button>
-			<button type="button" class="btn btn--alert">
+			<button type="button" class="btn btn--disabled">
 				<span class="btn__text">Cancel</span>
 			</button>
 		</div>
@@ -131,7 +131,7 @@
 <button type="button" class="btn btn--secondary btn--fixed">
 	<span class="btn__text">Notice</span>
 </button>
-<button type="button" class="btn btn--alert btn--fixed">
+<button type="button" class="btn btn--disabled btn--fixed">
 	<span class="btn__text">Cancel</span>
 </button>
 </code></pre>
@@ -146,170 +146,65 @@
 			<button type="button" class="btn btn--notice btn--fixed">
 				<span class="btn__text">Notice</span>
 			</button>
-			<button type="button" class="btn btn--alert btn--fixed">
+			<button type="button" class="btn btn--disabled btn--fixed">
 				<span class="btn__text">Cancel</span>
 			</button>
 		</div>
 	</section>
 	<!--//Button-->
-	<!--Grid-->
-	<section class="section" id="grid">
-		<h2 class="h2"><a href="#grid"># Grid</a></h2>
-		<div class="article">
-			<p class="p">
-				12그리드 시스템을 사용합니다. <br>
-				프로젝트별 브레이크 포인트를 지정합니다.<br>
-				모바일 : 768이하 <br>
-				태블릿 : 769이상 1024이하<br>
-				PC : 1025이상
-			</p>
-			<div class="result result--block">
-				<h4 class="h4">12 Grid</h4>
-				<div class="row">
-					<div class="col-t-6 col-d-12 green">.col-t-6 .col-d-12</div>
-				</div>
-				<div class="row">
-					<div class="col-m-12 col-t-6 coral">.col-m-12 .col-t-6</div>
-				</div>
-				<div class="row">
-					<div class="col-t-6 col-d-3 green">.col-t-6 .col-d-3</div>
-					<div class="col-t-6 col-d-3 coral">.col-t-6 .col-d-3</div>
-					<div class="col-t-6 col-d-3 blue">.col-t-6 .col-d-3</div>
-					<div class="col-t-6 col-d-3 yellow">.col-t-6 .col-d-3</div>
-				</div>
-				<div class="row">
-					<div class="col-d-2 grey">.col-d-2</div>
-					<div class="col-d-2 grey">.col-d-2</div>
-					<div class="col-d-2 grey">.col-d-2</div>
-					<div class="col-d-2 grey">.col-d-2</div>
-					<div class="col-d-2 grey">.col-d-2</div>
-					<div class="col-d-2 grey">.col-d-2</div>
-				</div>
-				<h4 class="h4">Center</h4>
-				<div class="row">
-					<div class="col-d-6 col-d-offset-3 yellow">.col-t-6</div>
-				</div>
-				<div class="row">
-					<div class="col-d-4 col-d-offset-4 grey">.col-t-4</div>
-				</div>
-				<h4 class="h4">Between</h4>
-				<div class="row">
-					<div class="col-m-4 col-d-2 blue">.col-d-2</div>
-					<div class="col-m-8 col-d-2 col-d-offset-8 yellow">.col-d-2</div>
-				</div>
-			</div>
-		</div>
-	</section>
-	<!--//Grid-->
 	<!--Icon-->
-	<section class="section" id="button">
-		<h2 class="h2"><a href="#button"># Icon</a></h2>
-		<div class="article">
-			<p class="p">
-				기본 스프라이트 이미지를 사용합니다.<br>
-				기능별 이미지가 정의되어 있을 경우 클래스를 따로 사용합니다.<br>
-				모든 아이콘이 전체적으로 쓰일 경우 하나의 클래스로 통일해서 쓸 수도 있습니다.
-			</p>
-			<div class="result">
-				<h4 class="h4">.i-checkbox / .i-checkbox--success / .i-checkbox--alert</h4>
-				<i class="i i-checkbox i-checkbox--default">기본 체크박스</i>
-				<i class="i i-checkbox i-checkbox--checked">체크된 체크박스</i>
-				<i class="i i-checkbox i-checkbox--alert">얼렛 체크박스</i>
-				<h4 class="h4">.i-sns / .i-sns--naver / .i-sns--kakao / .i-sns--fb</h4>
-				<i class="i i-sns i-sns--naver">검색</i>
-				<i class="i i-sns i-sns--kakao">검색</i>
-				<i class="i i-sns i-sns--fb">검색</i>
-				<h4 class="h4">.i-naver / .i-kakao / .i-fb</h4>
-			</div>
-		</div>
-	</section>
-	<!--//Icon-->
-	<!--Button + Icon-->
-	<section class="section" id="button">
-		<h2 class="h2"><a href="#button"># Button + Icon</a></h2>
-		<div class="article">
-			<div class="result">
-				<h4 class="h4">.btn--md</h4>
-				<a href="#" class="btn btn--md">
-					<span>
-						Naver
-					</span>
-					<i class="i i-sns i-sns--naver"></i>
-				</a>
-				<button type="button" role="button" class="btn btn--md">
-					Kakao
-					<i class="i i-sns i-sns--kakao"></i>
-				</button>
-				<button type="button" role="button" class="btn btn--md">
-					Facebook
-					<i class="i i-sns i-sns--fb"></i>
-				</button>
-				<h4 class="h4">.btn--lg</h4>
-				<a href="#" class="btn btn--lg">
-					<span>
-						Naver
-					</span>
-					<i class="i i-sns i-sns--naver"></i>
-				</a>
-				<button type="button" role="button" class="btn btn--lg">
-					<span>Kakao</span>
-					<i class="i i-sns i-sns--kakao"></i>
-				</button>
-				<button type="button" role="button" class="btn btn--lg">
-					<span>Facebook</span>
-					<i class="i i-sns i-sns--fb"></i>
-				</button>
-			</div>
-		</div>
-	</section>
-	<!-- List -->
-	<section class="section" id="list">
-		<h2 class="h2"><a href="#list"># List</a></h2>
+	<section class="section" id="icon">
+		<h2 class="h2"><a href="#icon"># Icon</a></h2>
 		<p class="p">
-			프로젝트에 따라 float이나 flex를 사용합니다.
+			스프라이트 이미지를 사용하고,<br>
+			프로젝트에 따라 svg, png 아이콘을 사용합니다.
 		</p>
-		<div class="article">
-			<div class="result result--block">
-				<h4 class="h4">블릿 텍스트</h4>
-				<ul class="list list--blit" style="max-width:300px">
-					<li>
-						<span>-</span>Lorem ipsum dolor.
-					</li>
-					<li>
-						<span>-</span>Lorem ipsum dolor sit amet, consectetur
-					</li>
-					<li>
-						<span>-</span>Lorem.
-					</li>
-					<li>
-						<span>-</span>Lorem ipsum dolor sit.
-					</li>
-				</ul>
-				<h4 class="h4">가로형 박스 (float)</h4>
-				<ul class="list list--horizontal">
-					<li class="green">lorem</li>
-					<li class="coral">Lorem ipsum dolor.</li>
-					<li class="blue">Lorem ipsum.</li>
-					<li class="yellow">lorem</li>
-				</ul>
-				<h4 class="h4">가로형 박스 (flex)</h4>
-				<ul class="list list--flex">
-					<li class="green">lorem</li>
-					<li class="coral">Lorem ipsum dolor.</li>
-					<li class="blue">Lorem ipsum.</li>
-					<li class="yellow">lorem</li>
-				</ul>
-				<h4 class="h4">세로형 박스</h4>
-				<ul class="list list--vertical">
-					<li class="green">lorem</li>
-					<li class="coral">Lorem ipsum dolor.</li>
-					<li class="blue">Lorem ipsum.</li>
-					<li class="yellow">lorem</li>
-				</ul>
-			</div>
+		<h3 class="h3">Sprite Image</h3>
+		<div class="img">
+			<img src="./imgs/sprite.png">
+		</div>
+		<h3 class="h3">기본 1배수 아이콘</h3>
+		<!--code-->
+		<pre><code class="language-html"><button type="button">
+	<i class="icon icon-home"></i>
+</button>
+<button type="button">
+	<i class="icon icon-home icon-home--primary"></i>
+</button>
+<button type="button">
+	<i class="icon icon-home icon-home--point"></i>
+</button>
+<button type="button">
+	<i class="icon icon-member"></i>
+</button>
+<button type="button">
+	<i class="icon icon-member icon-member--primary"></i>
+</button>
+<button type="button">
+	<i class="icon icon-member icon-member--point"></i>
+</button>
+</code></pre>
+		<div class="result">
+			<button type="button">
+				<i class="icon icon-home"></i>
+			</button>
+			<button type="button">
+				<i class="icon icon-home icon-home--primary"></i>
+			</button>
+			<button type="button">
+				<i class="icon icon-home icon-home--point"></i>
+			</button><br>
+			<button type="button">
+				<i class="icon icon-member"></i>
+			</button>
+			<button type="button">
+				<i class="icon icon-member icon-member--primary"></i>
+			</button>
+			<button type="button">
+				<i class="icon icon-member icon-member--point"></i>
+			</button>
 		</div>
 	</section>
-	<!-- //-->
 </div>
 
 
