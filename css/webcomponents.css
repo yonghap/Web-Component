@@ -40,6 +40,14 @@ h4 {font-size:1.2em}
 .icon-member {background-position:-156px 0}
 .icon-member--primary {background-position:-156px -104px}
 .icon-member--point {background-position:-156px -52px}
+/*ICON 2X*/
+.i {display:inline-block;position:relative;width:26px;height:26px;background-image:url(../imgs/sprite.png);background-repeat:no-repeat;background-size:104px 104px}
+.i-home {background-position:0 0}
+.i-home--primary {background-position:0 -52px}
+.i-home--point {background-position:0 -26px}
+.i-member {background-position:-78px 0}
+.i-member--primary {background-position:-78px -52px}
+.i-member--point {background-position:-78px -26px}
 /*GRID*/
 .row {margin:2px 0}
 .row:after {content:'';display:table;clear:both;}
