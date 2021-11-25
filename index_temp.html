@@ -16,6 +16,35 @@
 </head>
 <body class="theme">
 <div id="wrap" class="wrap">
+	<!--Webfont-->
+	<section class="section" id="webfont">
+		<h2 class="h2"><a href="#webfont"># Webfont</a></h2>
+		<p class="p">
+			IE지원 여부에 따라 다르게 선언합니다.
+		</p>
+		<h3 class="h3">구IE 지원</h3>
+		<!--code-->
+		<pre><code class="language-css">@font-face {
+	font-family: 'Noto Sans KR';
+	src:url(./common/css/fonts/NotoSans-Light.eot);  /* IE 8 이하 */
+	src:
+	    local('☺'), /* IE 8 이하에서 다운로드 방지 */
+        url(./common/css/fonts/NotoSans-Light.woff2) format('woff2'), /* Chrome, Firefox, Safari, Opera */
+        url(./common/css/fonts/NotoSans-Light.woff) format('woff'); /* IE 9+, Chrome, Firefox, Safari, Opera */
+}
+</code></pre>
+		<h3 class="h3">IE11+, 모던 브라우저 지원</h3>
+		<!--code-->
+		<pre><code class="language-css">@font-face {
+	font-family: 'Noto Sans KR';
+	font-weight:400;
+	src:
+        local(※), /* IE fix */
+        url(./fonts/NotoSans-Regular.woff2) format('woff2'),
+        url(./fonts/NotoSans-Regular.woff) format('woff');
+}
+</code></pre>
+	</section>
 	<!--Button-->
 	<section class="section" id="button">
 		<h2 class="h2"><a href="#button"># Button</a></h2>
