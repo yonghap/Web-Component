@@ -9,6 +9,7 @@ button {border:none;background:none}
 .blind {visibility:hidden;overflow:hidden;position:absolute;top:0;left:0;width:1px;height:1px;font-size:0;line-height:0}
 
 .wrap {color:#222;line-height:1.625}
+h1 {font-size:3em}
 h2 {font-size:2.2em}
 h3 {font-size:1.4em}
 h4 {font-size:1.2em}
@@ -32,6 +33,10 @@ h4 {font-size:1.2em}
 .btn--disabled {border-color:#aaa;background:#aaa;color:#fff}
 .btn--full {width:100%}
 .btn--fixed {min-width:200px}
+/*TYPOGRAPHY*/
+.title small {font-size:0.5em;color:grey}
+.subtitle small {font-size:0.5em;color:grey}
+.slogan small {font-size:0.5em;color:grey}
 /*ICON*/
 .icon {display:inline-block;position:relative;width:52px;height:52px;background-image:url(../imgs/sprite.png);background-repeat:no-repeat}
 .icon-home {background-position:0 0}
