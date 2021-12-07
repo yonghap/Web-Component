@@ -10,6 +10,8 @@
 	<!--<link rel="stylesheet"
 	      href="https://cdn.jsdelivr.net/gh/highlightjs/cdn-release@10.3.2/build/styles/default.min.css">-->
 	<script src="https://cdn.jsdelivr.net/gh/highlightjs/cdn-release@10.3.2/build/highlight.min.js"></script>
+	<link rel="stylesheet" href="https://unpkg.com/swiper@7/swiper-bundle.min.css">
+	<script src="https://unpkg.com/swiper@7/swiper-bundle.min.js"></script>
 	<link rel="stylesheet" href="./css/tomorrow-night-eighties.css">
 	<link rel="stylesheet" href="./css/common2.css?d=1112">
 	<link rel="stylesheet" href="./css/webcomponents.css?d=1112">
@@ -42,11 +44,11 @@
 		<!--code-->
 		<pre><code class="language-html"><!-- Header -->
 <header id="header" class="header"></header>
-<!-- // Header -->
-<!-- [D] 개발 주석 -->
+			<!-- // Header -->
+			<!-- [D] 개발 주석 -->
 <input type="text" value="" name="name">
 </code></pre>
-<!--//code-->
+		<!--//code-->
 		<!--code-->
 		<pre><code class="language-js">/**
  * 합계 구하기
@@ -123,8 +125,8 @@ function sum(x, y) {
 			기본 모양, 용도별, 크기별로 만듭니다.
 		</p>
 		<h3 class="h3">기본 모양</h3>
-			<!--code-->
-<pre><code class="language-html"><a href="#" class="btn">
+		<!--code-->
+		<pre><code class="language-html"><a href="#" class="btn">
 	<span class="btn__text">LINK</span>
 </a>
 <button type="button" class="btn">
@@ -134,7 +136,7 @@ function sum(x, y) {
 	<span class="btn__text">CANCEL</span>
 </button>
 </code></pre>
-			<!--//code-->
+		<!--//code-->
 		<div class="result">
 			<a href="#" class="btn">
 				<span class="btn__text">Link</span>
@@ -293,7 +295,8 @@ function sum(x, y) {
 			</button>
 			<button type="button">
 				<i class="icon icon-home icon-home--point"></i>
-			</button><br>
+			</button>
+			<br>
 			<button type="button">
 				<i class="icon icon-member"></i>
 			</button>
@@ -334,7 +337,8 @@ function sum(x, y) {
 			</button>
 			<button type="button">
 				<i class="i i-home i-home--point"></i>
-			</button><br>
+			</button>
+			<br>
 			<button type="button">
 				<i class="i i-member"></i>
 			</button>
@@ -434,7 +438,60 @@ function sum(x, y) {
 				https://www.cdnpkg.com/Swiper/4.5.1 - IE용
 			</a>
 		</div>
+		<!--code-->
+		<pre><code class="language-html"><!-- Slider main container -->
+<div class="swiper">
+	<!-- Additional required wrapper -->
+	<div class="swiper-wrapper">
+		<!-- Slides -->
+		<div class="swiper-slide">
+			<img src="https://dummyimage.com/1120x400/2d2d2d/fff">
+		</div>
+		<div class="swiper-slide">
+			<img src="https://dummyimage.com/1120x400/2d2d2d/fff">
+		</div>
+		<div class="swiper-slide">
+			<img src="https://dummyimage.com/1120x400/2d2d2d/fff">
+		</div>
+	</div>
+	<!-- If we need pagination -->
+	<div class="swiper-pagination"></div>
 
+	<!-- If we need navigation buttons -->
+	<div class="swiper-button-prev"></div>
+	<div class="swiper-button-next"></div>
+
+	<!-- If we need scrollbar -->
+	<div class="swiper-scrollbar"></div>
+</div>
+</code></pre>
+		<div class="result">
+			<!-- Slider main container -->
+			<div class="swiper">
+				<!-- Additional required wrapper -->
+				<div class="swiper-wrapper">
+					<!-- Slides -->
+					<div class="swiper-slide">
+						<img src="https://dummyimage.com/1120x400/2d2d2d/fff">
+					</div>
+					<div class="swiper-slide">
+						<img src="https://dummyimage.com/1120x400/2d2d2d/fff">
+					</div>
+					<div class="swiper-slide">
+						<img src="https://dummyimage.com/1120x400/2d2d2d/fff">
+					</div>
+				</div>
+				<!-- If we need pagination -->
+				<div class="swiper-pagination"></div>
+
+				<!-- If we need navigation buttons -->
+				<div class="swiper-button-prev"></div>
+				<div class="swiper-button-next"></div>
+
+				<!-- If we need scrollbar -->
+				<div class="swiper-scrollbar"></div>
+			</div>
+		</div>
 	</section>
 </div>
 
@@ -446,6 +503,26 @@ function sum(x, y) {
 	$(document).ready(function () {
 		hljs.configure({tabReplace: '    '});
 		hljs.initHighlighting();
+	});
+	const swiper = new Swiper('.swiper', {
+		// Optional parameters
+		loop: true,
+
+		// If we need pagination
+		pagination: {
+			el: '.swiper-pagination',
+		},
+
+		// Navigation arrows
+		navigation: {
+			nextEl: '.swiper-button-next',
+			prevEl: '.swiper-button-prev',
+		},
+
+		// And if we need scrollbar
+		scrollbar: {
+			el: '.swiper-scrollbar',
+		},
 	});
 </script>
 </body>
