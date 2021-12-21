@@ -37,6 +37,7 @@ h4 {font-size:1.2em}
 .title small {font-size:0.5em;color:grey}
 .subtitle small {font-size:0.5em;color:grey}
 .slogan small {font-size:0.5em;color:grey}
+.description {font-size:0.8em}
 /*ICON*/
 .icon {display:inline-block;position:relative;width:52px;height:52px;background-image:url(../imgs/sprite.png);background-repeat:no-repeat}
 .icon-home {background-position:0 0}
