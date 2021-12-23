@@ -494,6 +494,29 @@ function sum(x, y) {
 	<div class="swiper-scrollbar"></div>
 </div>
 </code></pre>
+		<pre><code class="language-js">const swiper = new Swiper('.swiper', {
+	// Optional parameters
+	loop: true,
+
+	// If we need pagination
+	pagination: {
+		el: '.swiper-pagination',
+	},
+
+	// Navigation arrows
+	navigation: {
+		nextEl: '.swiper-button-next',
+		prevEl: '.swiper-button-prev',
+	},
+
+	// And if we need scrollbar
+	scrollbar: {
+		el: '.swiper-scrollbar',
+	},
+});
+</code></pre>
+
+
 		<div class="result">
 			<!-- Slider main container -->
 			<div class="swiper">
