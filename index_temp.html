@@ -495,12 +495,28 @@ function sum(x, y) {
 </div>
 </code></pre>
 		<pre><code class="language-js">const swiper = new Swiper('.swiper', {
+	// Autoplay
+	autoplay: {
+		delay: 3000,
+	},
+
+	// In Carousel
+	slidesPerView: 1,
+	spaceBetween: 10,
+
+	// Direction
+	direction : 'horizontal', /* horizontal, vertical */
+
 	// Optional parameters
 	loop: true,
+
+	// Free mode
+	freeMode : true,
 
 	// If we need pagination
 	pagination: {
 		el: '.swiper-pagination',
+		type : 'bullets' /* fraction, progressbar, custom */
 	},
 
 	// Navigation arrows
@@ -513,7 +529,29 @@ function sum(x, y) {
 	scrollbar: {
 		el: '.swiper-scrollbar',
 	},
+
+	// Etc
+	centeredSlides: true,
+
+	on : {
+		init : function () {
+			console.log('초기화');
+		},
+		imagesReady : function () {
+			console.log('이미지 로드 후 실행');
+		},
+		slideChange : function () {
+			console.log('이동');
+		}
+	},
 });
+
+swiper.slideTo(index, speed, runCallbacks) // 해당 슬라이드로 이동
+swiper.slidePrev(index, speed, runCallbacks) // 이전 슬라이드로 이동
+swiper.slideNext(index, speed, runCallbacks) // 다음 슬라이드로 이동
+swiper.autoplay.start(); // 자동 재생 시작
+swiper.autoplay.stop(); // 자동 재생 정지
+swiper.destroy() // 슬라이드 제거
 </code></pre>
 
 
@@ -557,12 +595,28 @@ function sum(x, y) {
 		hljs.initHighlighting();
 	});
 	const swiper = new Swiper('.swiper', {
+		// Autoplay
+		autoplay: {
+			delay: 3000,
+		},
+
+		// In Carousel
+		slidesPerView: 1,
+		spaceBetween: 10,
+
+		// Direction
+		direction : 'horizontal', /* horizontal, vertical */
+
 		// Optional parameters
 		loop: true,
+
+		// Free mode
+		freeMode : true,
 
 		// If we need pagination
 		pagination: {
 			el: '.swiper-pagination',
+			type : 'bullets' /* fraction, progressbar, custom */
 		},
 
 		// Navigation arrows
@@ -574,6 +628,21 @@ function sum(x, y) {
 		// And if we need scrollbar
 		scrollbar: {
 			el: '.swiper-scrollbar',
+		},
+
+		// Etc
+		centeredSlides: true,
+
+		on : {
+			init : function () {
+				console.log('초기화');
+			},
+			imagesReady : function () {
+				console.log('이미지 로드 후 실행');
+			},
+			slideChange : function () {
+				console.log('이동');
+			}
 		},
 	});
 </script>
