@@ -27,7 +27,9 @@ jQuery 기반입니다.<br>
 - Icon : https://yonghap.github.io/Web-Component/#icon
 - Input : https://yonghap.github.io/Web-Component/#input
 - Table : https://yonghap.github.io/Web-Component/#table
+ 
 <br>
 
 ## :sun_with_face: JavaScript(jQuery)
 
+- Slider : https://yonghap.github.io/Web-Component/#slider
