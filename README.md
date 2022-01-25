@@ -14,24 +14,20 @@ jQuery 기반입니다.<br>
 
 - Doctype : https://yonghap.github.io/Web-Component/#doctype
 - Comment(주석) : https://yonghap.github.io/Web-Component/#comment
-- Layout(기본 레이아웃) : https://yonghap.github.io/Web-Component/#layout
 
 <br>
 
 ## :art: CSS
 
+- CSS : https://yonghap.github.io/Web-Component/#CSS
 - Reset : https://yonghap.github.io/Web-Component/#reset
 - Webfont : https://yonghap.github.io/Web-Component/#webfont
-- Grid System : https://yonghap.github.io/Web-Component/#grid
 - Typography : https://yonghap.github.io/Web-Component/#typography
-- Table : https://yonghap.github.io/Web-Component/#table
 - Button : https://yonghap.github.io/Web-Component/#button
+- Icon : https://yonghap.github.io/Web-Component/#icon
 - Input : https://yonghap.github.io/Web-Component/#input
-
+- Table : https://yonghap.github.io/Web-Component/#table
 <br>
 
 ## :sun_with_face: JavaScript(jQuery)
 
-- Modal : https://yonghap.github.io/Web-Component/#modal
-- Tab : https://yonghap.github.io/Web-Component/#tab
-- Accordion : https://yonghap.github.io/Web-Component/#accordion
