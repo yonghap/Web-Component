@@ -20,7 +20,6 @@ jQuery 기반입니다.<br>
 ## :art: CSS
 
 - CSS : https://yonghap.github.io/Web-Component/#CSS
-- Reset : https://yonghap.github.io/Web-Component/#reset
 - Webfont : https://yonghap.github.io/Web-Component/#webfont
 - Typography : https://yonghap.github.io/Web-Component/#typography
 - Button : https://yonghap.github.io/Web-Component/#button
