@@ -12,6 +12,7 @@
 	<script src="https://cdn.jsdelivr.net/gh/highlightjs/cdn-release@10.3.2/build/highlight.min.js"></script>
 	<link rel="stylesheet" href="https://unpkg.com/swiper@7/swiper-bundle.min.css">
 	<script src="https://unpkg.com/swiper@7/swiper-bundle.min.js"></script>
+	<script src="js/common.js"></script>
 	<link rel="stylesheet" href="./css/tomorrow-night-eighties.css">
 	<link rel="stylesheet" href="./css/common.css?d=1112">
 	<link rel="stylesheet" href="./css/webcomponents.css?d=1112">
@@ -573,6 +574,27 @@ function sum(x, y) {
 			</div>
 		</div>
 	</section>
+	<section id="tab" class="section">
+		<h2 class="h2"><a href="#tab"># Tab</a></h2>
+		<div class="result">
+			<div class="tab-menu">
+				<a href="#tab1" class="active">Tab 1</a>
+				<a href="#tab2">Tab 2</a>
+				<a href="#tab3">Tab 3</a>
+			</div>
+			<div class="tab-contents">
+				<div class="tab-content active" id="tab1">
+					1. Lorem ipsum dolor sit amet, consectetur adipisicing elit. Possimus, vero!
+				</div>
+				<div class="tab-content" id="tab2">
+					2. Lorem ipsum dolor sit amet, consectetur adipisicing elit. Deleniti eius impedit ipsum libero magnam nisi odit quaerat rem vel voluptate!
+				</div>
+				<div class="tab-content" id="tab3">
+					3. Lorem ipsum dolor sit amet, consectetur adipisicing elit. Aliquid eligendi eos molestias quaerat repellat voluptatibus.
+				</div>
+			</div>
+		</div>
+	</section>
 	<section id="slider" class="section">
 		<h2 class="h2"><a href="#slider"># Slider</a></h2>
 		swiper 슬라이더 라이브러리를 사용합니다.
@@ -701,8 +723,6 @@ swiper.destroy() // 슬라이드 제거
 		</div>
 	</section>
 </div>
-
-
 <script>
 	document.querySelectorAll("code").forEach(function (element) {
 		element.innerHTML = element.innerHTML.replace(/</g, "&lt;").replace(/>/g, "&gt;").replace(/"/g, "&quot;").replace(/'/g, "&#039;");
@@ -762,6 +782,7 @@ swiper.destroy() // 슬라이드 제거
 			}
 		},
 	});
+
 </script>
 </body>
 </html>
