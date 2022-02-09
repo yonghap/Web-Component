@@ -70,3 +70,5 @@ h4 {font-size:1.2em}
 .table th {background:#eee}
 .table--label {border-top:1px solid #eee}
 .table--label td {border-bottom:1px solid #eee}
+/*TAB*/
+.tab-content {display:none}
