@@ -4,32 +4,33 @@
 	 * @param e
 	 * @returns {*}
 	 */
-	$.fn.tab = function (e) {
-		return this.each(function () {
-			const type = $(this).data('toggle'),
-				target = $(this).data('target'),
-				parent = $(this).data('parent');
+	$.fn.tab = function (options) {
+		const opts = $.extend({
+			parentElement : '#tab',
+			effect : 'tab',
+		}, options || {});
 
-			switch (type) {
-				case "tab" :
-					var currentTab = $(target);
-					currentTab.show();
-					$(parent).find('.tab-content').not(currentTab).hide();
-					break;
-				case "accordion" :
-					var currentTab = $(target);
-					currentTab.stop().slideDown();
-					$(parent).find('.tab-content').not(currentTab).stop().slideUp();
-					break;
-			}
+		return this.each(function () {
+			$(this).find('[data-target]').click(function (e) {
+				e.preventDefault();
+				const type = opts.effect,
+					target = $(this).data('target'),
+					parent = $(opts.parentElement);
+
+				switch (type) {
+					case "tab" :
+						var currentTab = $(target);
+						currentTab.show();
+						$(parent).find('.tab-content').not(currentTab).hide();
+						break;
+					case "accordion" :
+						var currentTab = $(target);
+						currentTab.stop().slideDown();
+						parent.find('.tab-content').not(currentTab).stop().slideUp();
+						break;
+				}
+			});
 		})
 	}
 
 }(jQuery));
-
-$(function () {
-	$('[data-toggle]').click(function (e) {
-		e.preventDefault();
-		$(this).tab();
-	});
-});

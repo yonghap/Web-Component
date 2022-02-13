@@ -580,22 +580,22 @@ function sum(x, y) {
 			<div id="tabs" class="tabs">
 				<ul class="list-float">
 					<li class="green">
-						<a href="#tab1" data-toggle="accordion" data-target="#tab1" data-parent="#tabs">
+						<a href="#tab1" data-target="#tab1">
 							TAB1
 						</a>
 					</li>
 					<li class="coral">
-						<a href="#tab2" data-toggle="accordion" data-target="#tab2" data-parent="#tabs" >
+						<a href="#tab2" data-target="#tab2">
 							TAB2
 						</a>
 					</li>
 					<li class="blue">
-						<a href="#tab3" data-toggle="accordion" data-target="#tab3" data-parent="#tabs">
+						<a href="#tab3" data-target="#tab3">
 							TAB3
 						</a>
 					</li>
 					<li class="yellow">
-						<a href="#tab4" data-toggle="accordion" data-target="#tab4" data-parent="#tabs">
+						<a href="#tab4" data-target="#tab4">
 							TAB4
 						</a>
 					</li>
@@ -621,8 +621,9 @@ function sum(x, y) {
 			</div>
 			<script>
 				$(function () {
-					$('[data-target="#tab1"]').tab({
-
+					$('#tabs').tab({
+						parentElement : '#tabs',
+						effect : 'accordion'
 					});
 				});
 			</script>
