@@ -576,8 +576,60 @@ function sum(x, y) {
 	</section>
 	<section id="tab" class="section">
 		<h2 class="h2"><a href="#tab"># Tab</a></h2>
+		기본 탭메뉴입니다.<br>
+		일반탭과 아코디언 형태로 사용가능하며,<br>
+		탭 컨텐츠 영역은 jQuery hide나 addClass 함수를 통해 컨트롤 합니다.
+		<pre><code class="language-html"><div id="tabs1" class="tabs">
+	<ul class="list-float">
+		<li class="green">
+			<a href="#tab1" data-target="#tab1">
+				TAB1
+			</a>
+		</li>
+		<li class="coral">
+			<a href="#tab2" data-target="#tab2">
+				TAB2
+			</a>
+		</li>
+		<li class="blue">
+			<a href="#tab3" data-target="#tab3">
+				TAB3
+			</a>
+		</li>
+		<li class="yellow">
+			<a href="#tab4" data-target="#tab4">
+				TAB4
+			</a>
+		</li>
+	</ul>
+	<div class="tab-contents" style="margin-top:10px">
+		<div id="tab1" class="tab-content">
+			TAB1 Contents..<br>
+			Lorem ipsum dolor sit amet.
+		</div>
+		<div id="tab2" class="tab-content">
+			TAB2 Contents..<br>
+			Lorem ipsum dolor sit.
+		</div>
+		<div id="tab3" class="tab-content">
+			TAB3 Contents..<br>
+			Lorem ipsum dolor sit amet, consectetur.
+		</div>
+		<div id="tab4" class="tab-content">
+			TAB4 Contents..<br>
+			Lorem ipsum.
+		</div>
+	</div>
+</div>
+</code></pre>
+		<pre><code class="language-js">$('#tabs1').tab({
+	parentElement : '#tabs1', // 상단 탭 요소
+	effect : 'tab', // 탭 효과 tab, accordion
+	opened : '#tab1' // 기본 오픈 탭
+});
+</code></pre>
 		<div class="result">
-			<div id="tabs" class="tabs">
+			<div id="tabs1" class="tabs">
 				<ul class="list-float">
 					<li class="green">
 						<a href="#tab1" data-target="#tab1">
@@ -619,11 +671,59 @@ function sum(x, y) {
 					</div>
 				</div>
 			</div>
+			<div id="tabs2" class="tabs">
+				<ul class="list-float">
+					<li class="green">
+						<a href="#tab1" data-target="#tab5">
+							TAB5
+						</a>
+					</li>
+					<li class="coral">
+						<a href="#tab2" data-target="#tab6">
+							TAB6
+						</a>
+					</li>
+					<li class="blue">
+						<a href="#tab3" data-target="#tab7">
+							TAB7
+						</a>
+					</li>
+					<li class="yellow">
+						<a href="#tab4" data-target="#tab8">
+							TAB8
+						</a>
+					</li>
+				</ul>
+				<div class="tab-contents" style="margin-top:10px">
+					<div id="tab5" class="tab-content">
+						TAB5 Contents..<br>
+						Lorem ipsum dolor sit amet.
+					</div>
+					<div id="tab6" class="tab-content">
+						TAB6 Contents..<br>
+						Lorem ipsum dolor sit.
+					</div>
+					<div id="tab7" class="tab-content">
+						TAB7 Contents..<br>
+						Lorem ipsum dolor sit amet, consectetur.
+					</div>
+					<div id="tab8" class="tab-content">
+						TAB8 Contents..<br>
+						Lorem ipsum.
+					</div>
+				</div>
+			</div>
 			<script>
 				$(function () {
-					$('#tabs').tab({
-						parentElement : '#tabs',
-						effect : 'accordion'
+					$('#tabs1').tab({
+						parentElement : '#tabs1',
+						effect : 'tab',
+						opened : '#tab1'
+					});
+					$('#tabs2').tab({
+						parentElement : '#tabs2',
+						effect : 'accordion',
+						opened : '#tab5'
 					});
 				});
 			</script>

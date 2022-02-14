@@ -14,3 +14,4 @@ button, input[type=button], input[type=submit] {-webkit-appearance:none;-webkit-
 .h4 {margin-top:20px;margin-bottom:10px}
 .section {padding-top:60px}
 .img {margin:10px 0}
+.tabs ~ .tabs {margin-top:20px}
