@@ -18,13 +18,17 @@
 				switch (effect) {
 					case "tab" :
 						target.show();
+						parent.find('[data-target]').not($(this)).removeClass('active');
 						$(parent).find('.tab-content').not(target).hide();
 						break;
 					case "accordion" :
+						$(this).addClass('active');
 						target.stop().slideDown();
 						parent.find('.tab-content').not(target).stop().slideUp();
 						break;
 				}
+				$(this).addClass('active');
+				parent.find('[data-target]').not($(this)).removeClass('active');
 			});
 			if (opts.opened !== null) {
 				$('[data-target='+ opts.opened +']').trigger('click');
