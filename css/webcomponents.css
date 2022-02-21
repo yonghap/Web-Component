@@ -74,3 +74,10 @@ h4 {font-size:1.2em}
 .table--label td {border-bottom:1px solid #eee}
 /*TAB*/
 .tab-content {display:none}
+/*MODAL*/
+.modalbg {display:none;position:fixed;top:0;right:0;bottom:0;left:0;background-color:#000;opacity:0.5}
+.modal {display:none;overflow-x:hidden;overflow-y:auto;position:fixed;top:0;right:0;bottom:0;left:0;z-index:1}
+.modal__wrap {position:relative;max-width:500px;margin:10px auto;background:#fff}
+.modal__header {padding:10px}
+.modal__body {padding:10px}
+.modal__footer {padding:10px}
