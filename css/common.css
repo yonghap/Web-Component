@@ -17,3 +17,9 @@ button, input[type=button], input[type=submit] {-webkit-appearance:none;-webkit-
 .tabs ~ .tabs {margin-top:20px}
 .list-float li a {display:block;color:#333}
 .list-float li a.active {font-weight:bold;text-decoration:underline}
+
+@media screen and (max-width:1120px) {
+	.wrap {padding:50px 25px}
+	.section {padding-top:50px}
+	.h2 {margin-bottom:20px;font-size:2em}
+}
