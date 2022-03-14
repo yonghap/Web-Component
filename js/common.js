@@ -35,4 +35,10 @@
 			}
 		})
 	}
+	/**
+	 * 모달창
+	 */
+	$('[data-modal]').bind('click',function () {
+
+	})
 }(jQuery));

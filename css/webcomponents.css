@@ -77,7 +77,9 @@ h4 {font-size:1.2em}
 /*MODAL*/
 .modalbg {display:none;position:fixed;top:0;right:0;bottom:0;left:0;background-color:#000;opacity:0.5}
 .modal {display:none;overflow-x:hidden;overflow-y:auto;position:fixed;top:0;right:0;bottom:0;left:0;z-index:1}
-.modal__wrap {position:relative;max-width:500px;margin:10px auto;background:#fff}
-.modal__header {padding:10px}
-.modal__body {padding:10px}
-.modal__footer {padding:10px}
+.modal__wrap {display:flex;min-height:100%;padding:50px 0;justify-content:center;align-items:center;box-sizing:border-box}
+.modal__inner {flex-basis:500px}
+.modal__box {padding:15px;background:#fff}
+.modal__header {font-size:2em}
+.modal__body {margin:10px 0}
+.modal__footer {font-size:1.6em}
