@@ -12,7 +12,7 @@
 	<script src="https://cdn.jsdelivr.net/gh/highlightjs/cdn-release@10.3.2/build/highlight.min.js"></script>
 	<link rel="stylesheet" href="https://unpkg.com/swiper@7/swiper-bundle.min.css">
 	<script src="https://unpkg.com/swiper@7/swiper-bundle.min.js"></script>
-	<script src="js/common.js"></script>
+	<script defer src="js/common.js"></script>
 	<link rel="stylesheet" href="./css/tomorrow-night-eighties.css">
 	<link rel="stylesheet" href="./css/common.css?d=1112">
 	<link rel="stylesheet" href="./css/webcomponents.css?d=1112">
@@ -412,13 +412,13 @@ function sum(x, y) {
 			block input을 기본으로 사용합니다.
 		</p>
 		<pre><code class="language-html"><input type="text" class="ipt">
-<input type="text" class="ipt ipt--lg" placeholder="name">
 <input type="text" class="ipt ipt--disabled" disabled placeholder="disabled">
+<input type="text" class="ipt ipt--lg" placeholder="name">
 </code></pre>
 		<div class="result">
 			<input type="text" class="ipt" placeholder="name">
-			<input type="text" class="ipt ipt--lg" placeholder="name">
 			<input type="text" class="ipt ipt--disabled" disabled placeholder="disabled">
+			<input type="text" class="ipt ipt--lg" placeholder="name">
 		</div>
 	</section>
 	<section class="section" id="list">
@@ -733,13 +733,16 @@ function sum(x, y) {
 		<h2 class="h2"><a href="#modal"># Modal</a></h2>
 		모달팝업입니다.<br><br>
 		<div class="result">
-			<button type="button" class="btn btn--large btn--primary" data-modal="#modal1">Modal</button>
+			<button type="button" class="btn btn--large btn--primary" data-modalopen="#modal1">Modal</button>
 			<div class="modal" id="modal1">
 				<div class="modal__wrap">
 					<div class="modal__inner">
 						<div class="modal__box">
 							<header class="modal__header">
 								Modal title
+								<button type="button" data-modalclose="#modal1">
+									<img src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAEAAAABACAYAAACqaXHeAAAAAXNSR0IArs4c6QAABKBJREFUeF7tmkmvlUUQhp8LiAFcuMK/g8IGRBTFIIqgEVERNQ4RIxHUQAAJMglRZoEICLhRBgU3Kv+FhJXBgUGBvEl3cvLlnO/rqu4+3OSeb3MXt7u63qerh1NdY0zwb2yC62cEYBQBE5zAaAlM8AAYbYKeJTADOAjMAvYD64C79ymSJgFbgJeBX8Pffyy+WAFMB34EHusZZB/wBnDHMnCBtvJ9Txg7mvsdmAf8lWrfAqCf+DjOAeC1IULQzCsKX+oj1AQhFcC0MPOzW8jKoZVDgDA5iF/e4stvIRL+7oqEFAAPAj8Eg132DgGvVoQg8RpjWZcjwCXgSeDftrYpAE4CixMGjE2+BV4B/jf0SWkq8ceAJSmNQ5sTwPO5ABRGWv+WT45qZy4FYQpw3DgR8vdP4OFcADrqVljUh7bfhVDNhSDxsvWswwedEqtzASj0jgBLHQ6cBl4Abjv6qosn7ONQp4LP/+UCiI4cBl50CDkT1qEVwgOA9p+nHWOqn3xtFS+7KZtgHN+yAzd9/glYBNxMFDMV0Aw+ldi+t5lp6VkAxEjQed92Bg/y+RzwTAIEif8+HGFW/eZj2ApADukWppufdnnrdyGE9I0BHSVe+8YCq+Hgk/k26gEQl85XwCqHoxeBhUATgsRrv3jCYVMn1eueC5gXQISwG3jT4fDPAUK8pem2KfHzHbb0Y0ziXb9IcwBECLu6ztoBon4Jm5x+RZ4FHneI/zpEoUu89RQY5J8geiPhcjA6xyF+B/Ced+bjeLkR0GtnO/COQ4iny5fA+56OzT6lAES7m4CPSjjWYmMb8EGpMUoDkF8bgY9LOdiwsxX4sKTtGgDk3wZgbUlHgS+ANYVtmq7C1rE/Bz6xdhrQXonPKkurVgREHZ+FrHEOh08B2any1QYgp3MiQRGk5VTtqw1A9veGm5pHhH6CKxlTLeVeE0Cu+AisKoRaAPo9WngiIPYx/8xNHawGgNLiq0IoDUD2vD+TUyateCSUBFBbfARU9AWqFIBhiS8OoQSAnN1er0j6PDnG7FyABs4FkJMLiHl7nfFa2x4I2a/SOQDU15sNaj5aKNHqhaB8oJKhrqyQF0COeKW89VrUfLQQBF16Ul5+myeGG4IHgPrsBN5KObcabQaJj81yHl9cEKwAcsQr36+n6q7nKkHwPsOZM8QWAGqrROTbjplPFd8bCUOBkAogR7zy/Spq6Jr5JtecSPgmFE91boypADY701Fe8b2R4H2a1z71btfpkAJAGZn1jrDv2vBSTebUCCiTJP8HfikArgKPpHob2uXOfL/loBKZ54x+XANm5gKwFknpmUtr3loQ0aXNUyekC1crtJQIaCuQbDqtcjoNWFp8756g3w+6SHV9fwBzu6pGUwBoIEFQlcejLaPWFm+BkCTe+mOoDcL5UPiQWgLTNXtd/9fGeHRADeCVMPPXu4xYAcRIUKmLKsXjN2zxvZHQhGAS7wGgPg8BqsDU+lJBktLWt1JoV2ijjVGXHlWEqfJEV+3kSnEvgN4ZyC2CLMVEe1nnra/fYKmbYClHx52dEYBxNyVDdmgUAUMGPu6GG0XAuJuSITt0D7Sl50E5nE3nAAAAAElFTkSuQmCC">
+								</button>
 							</header>
 							<div class="modal__body">
 								Lorem ipsum dolor sit amet, consectetur adipisicing elit. A amet animi consequuntur corporis cupiditate doloribus eligendi esse et, eum harum libero, magnam natus nemo obcaecati odit perspiciatis praesentium quasi quis ratione repellendus rerum similique, temporibus voluptatibus. Aliquam amet blanditiis cum cumque error explicabo facere hic illum incidunt magni nesciunt nisi odit officia perferendis perspiciatis possimus praesentium provident quia, recusandae soluta tenetur voluptas voluptatem! Dolorem numquam praesentium velit? Adipisci aut delectus dolor eaque ex expedita facere nobis officiis perspiciatis, quasi quia, quis quisquam quo, quos temporibus? Amet, distinctio enim eum exercitationem fuga fugit, itaque labore laborum minima mollitia perferendis quas, velit.
@@ -876,9 +879,9 @@ swiper.destroy() // 슬라이드 제거
 				<div class="swiper-button-prev"></div>
 				<div class="swiper-button-next"></div>
 
-				<!-- If we need scrollbar -->
-				<div class="swiper-scrollbar"></div>
 			</div>
+			<!-- If we need scrollbar -->
+			<div class="swiper-scrollbar"></div>
 		</div>
 	</section>
 </div>
@@ -896,18 +899,15 @@ swiper.destroy() // 슬라이드 제거
 			delay: 3000,
 		},
 
-		// In Carousel
-		slidesPerView: 1,
-		spaceBetween: 10,
+
 
 		// Direction
 		direction : 'horizontal', /* horizontal, vertical */
 
 		// Optional parameters
-		loop: true,
+		// loop: true,
 
 		// Free mode
-		freeMode : true,
 
 		// If we need pagination
 		pagination: {
@@ -927,7 +927,6 @@ swiper.destroy() // 슬라이드 제거
 		},
 
 		// Etc
-		centeredSlides: true,
 
 		on : {
 			init : function () {

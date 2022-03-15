@@ -38,7 +38,25 @@
 	/**
 	 * 모달창
 	 */
-	$('[data-modal]').bind('click',function () {
-
-	})
+	var modal = {
+		modalOpen : function(e) {
+			let target = $(e.currentTarget).data('modalopen');
+			if(!$('.modalbg').is(':visible')) {
+				$('.modalbg').show();
+				$('body').addClass('modal-open');
+			}
+			$(target).show();
+		},
+		modalClose : function(e) {
+			let target = $(e.currentTarget).data('modalclose');
+			$('.modalbg').hide();
+			$('body').removeClass('modal-open');
+			$(target).hide();
+		},
+		bind : function() {
+			$('[data-modalopen]').bind('click',modal.modalOpen);
+			$('[data-modalclose]').bind('click',modal.modalClose);
+		}
+	}
+	modal.bind();
 }(jQuery));

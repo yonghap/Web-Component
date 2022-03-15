@@ -17,7 +17,9 @@ button, input[type=button], input[type=submit] {-webkit-appearance:none;-webkit-
 .tabs ~ .tabs {margin-top:20px}
 .list-float li a {display:block;color:#333}
 .list-float li a.active {font-weight:bold;text-decoration:underline}
-
+.result {position:relative}
+.result .ipt {margin:5px 0}
+.swiper-scrollbar {height:5px;background:#eee}
 @media screen and (max-width:1120px) {
 	.wrap {padding:50px 25px}
 	.section {padding-top:50px}

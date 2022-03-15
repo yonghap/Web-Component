@@ -5,9 +5,10 @@ a {color:#0080cc;text-decoration:none}
 img {max-width:100%;border:none;vertical-align:top}
 button, input, select, textarea {font-family:inherit}
 button, input[type=button], input[type=submit] {-webkit-appearance:none;-webkit-border-radius:none}
-button {border:none;background:none}
+button {border:none;background:none;cursor:pointer}
 .blind {visibility:hidden;overflow:hidden;position:absolute;top:0;left:0;width:1px;height:1px;font-size:0;line-height:0}
 
+body.modal-open {overflow:hidden;padding-right:17px}
 .wrap {padding-bottom:80px;color:#222;line-height:1.625}
 h1 {font-size:3em}
 h2 {font-size:2.2em}
@@ -79,7 +80,9 @@ h4 {font-size:1.2em}
 .modal {display:none;overflow-x:hidden;overflow-y:auto;position:fixed;top:0;right:0;bottom:0;left:0;z-index:1}
 .modal__wrap {display:flex;min-height:100%;padding:50px 0;justify-content:center;align-items:center;box-sizing:border-box}
 .modal__inner {flex-basis:500px}
-.modal__box {padding:15px;background:#fff}
-.modal__header {font-size:2em}
+.modal__box {padding:15px 25px;border-radius:10px;background:#fff}
+.modal__header {position:relative;padding:10px 0;font-size:2em}
+.modal__header button {position:absolute;top:50%;right:20px;margin-top:-15px}
+.modal__header button img {width:30px}
 .modal__body {margin:10px 0}
-.modal__footer {font-size:1.6em}
+.modal__footer {padding:10px 0;font-size:1.6em}
