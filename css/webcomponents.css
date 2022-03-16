@@ -82,7 +82,7 @@ h4 {font-size:1.2em}
 .modal__inner {flex-basis:500px}
 .modal__box {padding:15px 25px;border-radius:10px;background:#fff}
 .modal__header {position:relative;padding:10px 0;font-size:2em}
-.modal__header button {position:absolute;top:50%;right:20px;margin-top:-15px}
-.modal__header button img {width:30px}
+.modal__header button {position:absolute;top:50%;right:20px;margin-top:-12px}
+.modal__header button img {width:25px}
 .modal__body {margin:10px 0}
 .modal__footer {padding:10px 0;font-size:1.6em}
