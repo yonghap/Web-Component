@@ -23,7 +23,8 @@
 		개인용 Web Component 입니다.<br>
 		퍼블리싱 빠르고 효율적으로 하기 위해 작성하였습니다.<br>
 		BEM CSS 방법론을 사용합니다.<br>
-		부트스트랩과 메테리얼 CSS를 참고했습니다.
+		부트스트랩과 메테리얼 CSS를 참고했습니다.<br>
+		IE는 지원하지 않습니다.
 	</p>
 	<!-- Doctype -->
 	<section class="section" id="doctype">
@@ -900,7 +901,53 @@ swiper.destroy() // 슬라이드 제거
 		hljs.configure({tabReplace: '    '});
 		hljs.initHighlighting();
 	});
-	
+	const swiper = new Swiper('.swiper', {
+		// Autoplay
+		autoplay: {
+			delay: 3000,
+		},
+
+
+
+		// Direction
+		direction : 'horizontal', /* horizontal, vertical */
+
+		// Optional parameters
+		// loop: true,
+
+		// Free mode
+
+		// If we need pagination
+		pagination: {
+			el: '.swiper-pagination',
+			type : 'bullets' /* fraction, progressbar, custom */
+		},
+
+		// Navigation arrows
+		navigation: {
+			nextEl: '.swiper-button-next',
+			prevEl: '.swiper-button-prev',
+		},
+
+		// And if we need scrollbar
+		scrollbar: {
+			el: '.swiper-scrollbar',
+		},
+
+		// Etc
+
+		on : {
+			init : function () {
+				console.log('초기화');
+			},
+			imagesReady : function () {
+				console.log('이미지 로드 후 실행');
+			},
+			slideChange : function () {
+				console.log('이동');
+			}
+		},
+	});
 
 </script>
 </body>
