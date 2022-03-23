@@ -900,53 +900,7 @@ swiper.destroy() // 슬라이드 제거
 		hljs.configure({tabReplace: '    '});
 		hljs.initHighlighting();
 	});
-	const swiper = new Swiper('.swiper', {
-		// Autoplay
-		autoplay: {
-			delay: 3000,
-		},
-
-
-
-		// Direction
-		direction : 'horizontal', /* horizontal, vertical */
-
-		// Optional parameters
-		// loop: true,
-
-		// Free mode
-
-		// If we need pagination
-		pagination: {
-			el: '.swiper-pagination',
-			type : 'bullets' /* fraction, progressbar, custom */
-		},
-
-		// Navigation arrows
-		navigation: {
-			nextEl: '.swiper-button-next',
-			prevEl: '.swiper-button-prev',
-		},
-
-		// And if we need scrollbar
-		scrollbar: {
-			el: '.swiper-scrollbar',
-		},
-
-		// Etc
-
-		on : {
-			init : function () {
-				console.log('초기화');
-			},
-			imagesReady : function () {
-				console.log('이미지 로드 후 실행');
-			},
-			slideChange : function () {
-				console.log('이동');
-			}
-		},
-	});
+	
 
 </script>
 </body>
