@@ -59,6 +59,8 @@ h4 {font-size:1.2em}
 .ipt {display:block;width:100%;padding:10px;border:1px solid #ccc;box-sizing:border-box;outline:none}
 .ipt--lg {padding:15px}
 .ipt--disabled {background:#eee}
+/*SELECT*/
+.
 /*LIST*/
 .list {display:flex;justify-content:space-between}
 .list li {flex-basis:calc(25% - 10px);padding:10px;color:#333;text-align:center;box-sizing:border-box}
