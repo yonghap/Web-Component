@@ -25,10 +25,17 @@ jQuery 기반입니다.<br>
 - Button : https://yonghap.github.io/Web-Component/#button
 - Icon : https://yonghap.github.io/Web-Component/#icon
 - Input : https://yonghap.github.io/Web-Component/#input
+- Select : https://yonghap.github.io/Web-Component/#select
+- Radio : https://yonghap.github.io/Web-Component/#radio
+- Checkbox : https://yonghap.github.io/Web-Component/#checkbox
+- List : https://yonghap.github.io/Web-Component/#list
 - Table : https://yonghap.github.io/Web-Component/#table
  
 <br>
 
 ## :sun_with_face: JavaScript(jQuery)
 
+- Tab : https://yonghap.github.io/Web-Component/#tab
+- Modal : https://yonghap.github.io/Web-Component/#modal
+- Cookie : https://yonghap.github.io/Web-Component/#cookie
 - Slider : https://yonghap.github.io/Web-Component/#slider
