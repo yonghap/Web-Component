@@ -4,38 +4,38 @@
 jQuery 기반입니다.<br>
 프로젝트에 따라 수정하여 사용합니다.
 
-<a href="https://yonghap.github.io/Web-Component/" target="_blank">
-    https://yonghap.github.io/Web-Component
+<a href="http://gameb.co.kr/project/webcomponent/" target="_blank">
+    바로가기
 </a>
 
 <br><br>
 
 ## :page_facing_up: HTML
 
-- Doctype : https://yonghap.github.io/Web-Component/#doctype
-- Comment(주석) : https://yonghap.github.io/Web-Component/#comment
+- Doctype : http://gameb.co.kr/project/webcomponent/#doctype
+- Comment(주석) : http://gameb.co.kr/project/webcomponent/#comment
 
 <br>
 
 ## :art: CSS
 
-- CSS : https://yonghap.github.io/Web-Component/#CSS
-- Webfont : https://yonghap.github.io/Web-Component/#webfont
-- Typography : https://yonghap.github.io/Web-Component/#typography
-- Button : https://yonghap.github.io/Web-Component/#button
-- Icon : https://yonghap.github.io/Web-Component/#icon
-- Input : https://yonghap.github.io/Web-Component/#input
-- Select : https://yonghap.github.io/Web-Component/#select
-- Radio : https://yonghap.github.io/Web-Component/#radio
-- Checkbox : https://yonghap.github.io/Web-Component/#checkbox
-- List : https://yonghap.github.io/Web-Component/#list
-- Table : https://yonghap.github.io/Web-Component/#table
+- CSS : http://gameb.co.kr/project/webcomponent/#CSS
+- Webfont : http://gameb.co.kr/project/webcomponent/#webfont
+- Typography : http://gameb.co.kr/project/webcomponent/#typography
+- Button : http://gameb.co.kr/project/webcomponent/#button
+- Icon : http://gameb.co.kr/project/webcomponent/#icon
+- Input : http://gameb.co.kr/project/webcomponent/#input
+- Select : http://gameb.co.kr/project/webcomponent/#select
+- Radio : http://gameb.co.kr/project/webcomponent/#radio
+- Checkbox : http://gameb.co.kr/project/webcomponent/#checkbox
+- List : http://gameb.co.kr/project/webcomponent/#list
+- Table : http://gameb.co.kr/project/webcomponent/#table
  
 <br>
 
 ## :sun_with_face: JavaScript(jQuery)
 
-- Tab : https://yonghap.github.io/Web-Component/#tab
-- Modal : https://yonghap.github.io/Web-Component/#modal
-- Cookie : https://yonghap.github.io/Web-Component/#cookie
-- Slider : https://yonghap.github.io/Web-Component/#slider
+- Tab : http://gameb.co.kr/project/webcomponent/#tab
+- Modal : http://gameb.co.kr/project/webcomponent/#modal
+- Cookie : http://gameb.co.kr/project/webcomponent/#cookie
+- Slider : http://gameb.co.kr/project/webcomponent/#slider
